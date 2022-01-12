@@ -184,8 +184,8 @@ gaps outer 2
 # colors
 set $fucused-color       #98971a
 set $bg-color 	         #282828
-set $inactive-bg-color   #2f343f
 set $text-color          #ebdbb2
+set $inactive-bg-color   #282828
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 set $indicator-color     #b2c75e
