@@ -1,0 +1,9 @@
+bashrc - /home/Balder/.bashrc
+bash-aliases - /home/Balder/.bash_aliases
+nvim - /home/Balder/.config/nvim/init.vim
+kitty - /home/Balder/.config/kitty/kitty.conf
+awesome - /home/Balder/.config/awesome/rc.lua
+i3 - /home/Balder/.config/i3/config
+i3-blocks - /home/Balder/.config/i3/i3blocks.conf
+dunst - /home/Balder/.config/dunst/dunstrc
+Xresources - /home/Balder/.config/X/.Xresources

@@ -1,0 +1,9 @@
+downloads - ~/Downloads
+documents - ~/Documents
+images - ~/Pictures
+configs - ~/.config
+home - ~
+gym - ~/Documents/Skole/Gym
+desktop - ~/Desktop
+obsidian - ~/Documents/Skole/Balders Noter
+test - ~/test

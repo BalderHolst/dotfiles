@@ -30,7 +30,7 @@ alias r=ranger
 
 # config management
 
-gitconfig() { 
+.git() { 
 	/usr/bin/git --git-dir=$HOME/.git-dotfiles/ --work-tree=$HOME "$@"
 }
 export -f gitconfig
