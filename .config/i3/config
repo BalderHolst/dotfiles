@@ -181,6 +181,7 @@ gaps inner 8
 gaps outer 2
 
 # colors
+set $fucused-color       #55555f
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
@@ -189,10 +190,10 @@ set $urgent-bg-color     #E53935
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #777777
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #777777
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #777777
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #777777
+client.focused          $fucused-color      $fucused-color     $text-color          #888888
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #888888
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #888888
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #888888
 
 # thin borders
 hide_edge_borders both
@@ -237,8 +238,11 @@ exec_always feh --bg-scale ~/Pictures/space.jpg
 exec_always compton -f -D 1
 
 # Tray Icons!
-exec volumeicon
+exec_always volumeicon
 exec nm-applet
+
+# notifications
+exec_always dunst
 
 # ========================= LAUNCH PROGRAMS ==========================
 bindsym $mod+ae exec config

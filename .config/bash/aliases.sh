@@ -1,8 +1,18 @@
+scripts=$(cat ~/.config/bash/scripts.txt)
 
-
-
-
-
+for script in $scripts
+do
+	type=$(echo $script | awk -F: '{print $1}')
+	name=$(echo "$script" | awk -F/ {'print $NF'} | awk -F. {'print $1'})
+	path=$(echo $script | awk -F: '{print $NF}')
+	if [ "$type" = "f" ] 
+	then
+		eval "function $name() { $path \$@ ; }"
+		eval "export -f $name"
+	else
+		eval "alias $name=$path"
+	fi
+done
 
 # Navigation
 
@@ -15,9 +25,6 @@ alias r=ranger
 
 # launch scripts
 
-function clatex() { ~/.scripts/clatex/clatex.sh ; }
-alias mt=$HOME/.scripts/mt/mt.sh
-alias ct=$HOME/.scripts/mt/ct.sh
 
 
 
@@ -29,7 +36,3 @@ gitconfig() {
 export -f gitconfig
 
 export CONFIGS_FILE="$HOME/.scripts/edit_configs/configs.txt"
-function add_config() { ~/.scripts/edit_configs/add_config.sh ; }
-function config() { ~/.scripts/edit_configs/config.sh ; }
-export -f add_config
-export -f config
