@@ -17,7 +17,6 @@ def save_apps(d):
 
 
 apps = load_apps()
-prev_apps = apps.copy()
 
 date = currentDate = datetime.date.today()
 day = int(currentDate.strftime("%j"))
@@ -32,10 +31,9 @@ for i,app in enumerate(apps):
 
         os.system(f"{cmd} || notify-send Autoscript \"{app['name']} failed to run\"")
         app['last_checked'] = day
-        app['test'] = day
 
-print(apps)
-print(prev_apps)
-
+if (apps != load_apps()):
+    print(apps)
+    save_apps(apps)
 
 
