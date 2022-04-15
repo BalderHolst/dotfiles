@@ -21,7 +21,7 @@ for app in apps:
         cmd = app['cmd'].replace('%d',str(date))
 
 
-        subprocess.run(["notify-send","test",f"Autoscript Running \"{app['name']}\""])
+        subprocess.run(["notify-send","Autoscript",f"Autoscript Running \"{app['name']}\""])
 
         os.system(f"{cmd} || notify-send Autoscript \"{app['name']} failed to run\"")
 
