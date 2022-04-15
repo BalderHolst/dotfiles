@@ -1,0 +1,8 @@
+[
+        {
+            "name": "Dotfiles --> Git",
+            "frequency": 7,
+            "cmd": "dotgit commit -a -m \"autocommit %d\" ; dotgit push",
+            "last_checked": 104
+        }
+]
