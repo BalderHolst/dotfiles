@@ -17,7 +17,7 @@ def save_apps(d):
 
 
 apps = load_apps()
-prev_apps = apps
+prev_apps = apps.copy()
 
 date = currentDate = datetime.date.today()
 day = int(currentDate.strftime("%j"))
