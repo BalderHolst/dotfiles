@@ -32,6 +32,7 @@ for i,app in enumerate(apps):
 
         os.system(f"{cmd} || notify-send Autoscript \"{app['name']} failed to run\"")
         app['last_checked'] = day
+        app.append("test")
 
 print(apps)
 print(prev_apps)
