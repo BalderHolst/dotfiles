@@ -12,7 +12,7 @@ def load_apps():
 
 def save_apps(d):
     with open('apps.json','w') as f:
-        return(json.dump(d,f))
+        return(json.dump(d,f,indent=4))
 
 
 
