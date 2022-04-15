@@ -1,4 +1,5 @@
 #!/bin/bash
+# type: f
 
 path_file=~/.scripts/clatex/path.txt
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+#type: f
 
 
 if [[ $(echo $1 | wc --chars) -lt 2 ]]; then	

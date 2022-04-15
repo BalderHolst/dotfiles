@@ -1,3 +1,6 @@
+#!/bin/bash
+# type: f
+
 edit_cmd="kitty nvim"
 
 add="add_config"

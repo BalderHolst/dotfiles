@@ -1,9 +1,0 @@
-f:/home/Balder/.scripts/edit_configs/add_config.sh
-f:/home/Balder/.scripts/edit_configs/config.sh
-f:/home/Balder/.scripts/mt/mt.sh
-f:/home/Balder/.scripts/mt/ct.sh
-f:/home/Balder/.scripts/clatex/change_path.sh
-f:/home/Balder/.scripts/clatex/clatex.sh
-a:/home/Balder/.scripts/i3/power.sh
-a:/home/Balder/.scripts/test.sh
-a:/home/Balder/.scripts/prompt.sh
