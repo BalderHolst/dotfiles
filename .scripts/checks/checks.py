@@ -33,7 +33,7 @@ for i,app in enumerate(apps):
         app['last_checked'] = day
 
 if (apps != load_apps()):
-    print(apps)
+    print(apps,load_apps())
     save_apps(apps)
 
 
