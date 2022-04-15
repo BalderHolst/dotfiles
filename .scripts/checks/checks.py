@@ -31,7 +31,7 @@ for i,app in enumerate(apps):
         subprocess.run(["notify-send","Autoscript",f"Autoscript Running \"{app['name']}\""])
 
         os.system(f"{cmd} || notify-send Autoscript \"{app['name']} failed to run\"")
-        apps[i]['last_checked'] = day
+        app['last_checked'] = day
 
 print(apps)
 print(prev_apps)
