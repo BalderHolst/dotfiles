@@ -23,7 +23,7 @@ for app in apps:
 
         subprocess.run(["notify-send","test",f"Autoscript Running \"{app['name']}\""])
 
-        os.system(cmd)
+        os.system(f"{cmd} || notify-send Autoscript \"{app['name']} failed to run\"")
 
 
 
