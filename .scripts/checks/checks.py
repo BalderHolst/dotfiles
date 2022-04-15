@@ -16,7 +16,9 @@ apps = load_apps()
 date = currentDate = datetime.date.today()
 day = int(currentDate.strftime("%j"))
 
+
 for app in apps:
+    print(app['last_checked'] + app['frequency'] )
     if (app['last_checked'] + app['frequency'] >= day):
         cmd = app['cmd'].replace('%d',str(date))
 
