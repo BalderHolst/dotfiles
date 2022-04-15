@@ -10,8 +10,14 @@ def load_apps():
         return(json.load(f))
 
 
+def save_apps(d):
+    with open('apps.json','w') as f:
+        return(json.dump(d,f))
+
+
 
 apps = load_apps()
+prev_apps = apps
 
 date = currentDate = datetime.date.today()
 day = int(currentDate.strftime("%j"))
@@ -27,7 +33,10 @@ for i,app in enumerate(apps):
         os.system(f"{cmd} || notify-send Autoscript \"{app['name']} failed to run\"")
         apps[i]['last_checked'] = day
 
-        
+apps.append("test")  
+
+print(apps)
+print(prev_apps)
 
 
 
