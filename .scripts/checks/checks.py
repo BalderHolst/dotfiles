@@ -19,6 +19,7 @@ day = int(currentDate.strftime("%j"))
 
 for app in apps:
     print(app['last_checked'] + app['frequency'])
+    print(day)
     print("\n")
     if (app['last_checked'] + app['frequency'] >= day):
         cmd = app['cmd'].replace('%d',str(date))
