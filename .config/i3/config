@@ -244,6 +244,9 @@ exec nm-applet
 # notifications
 exec_always dunst
 
+# Autoscripts
+exec_always autoscripts
+
 # ========================= LAUNCH PROGRAMS ==========================
 bindsym $mod+ae exec config
 

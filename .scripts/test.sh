@@ -1,4 +1,5 @@
 #!/bin/bash
+#type: n
  
 str1="Learn Bash"
 str2="Learn Bash"
