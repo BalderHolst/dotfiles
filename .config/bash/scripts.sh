@@ -12,24 +12,23 @@ do
 
 	name=$(echo "$filename" | awk -F. {'print $1'})
 	extention=$(echo "$filename" | awk -F. {'print $NF'})
-
     
     
     runner=""
     if [[ "$extention" = "py" ]]; then
-        runner="python"        
+        runner="python "        
     fi
 
 
 	if [ "$t" = "f" ] 
 	then
-		eval "function $name() { $runner $path \$@ ; }"
+		eval "function $name() { $runner$path \$@ ; }"
 		eval "export -f $name"
     elif [ "$t" = "n" ]
     then
         :
     else
-		eval "alias $name=$path"
+		eval "alias $name='$runner$path'"
 	fi
 done
 
