@@ -8,6 +8,10 @@ structure=$(cat .structure.json) || exit 1
 path=$(echo "$structure" | grep "main.tex" | sed s/,//g | sed s/\"//g | sed s/\ //g)
 out=$(echo "$structure" | grep "out\"" | sed s/,//g | sed s/\"//g | sed s/\ //g)
 
+if [[ "$out" = "" ]]; then
+    pdflatex "$path"
+else
+    pdflatex -output-dir "$out" "$path"
+fi
 
-pdflatex -output-dir "$out" "$path"
 

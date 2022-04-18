@@ -2,6 +2,19 @@
     {
         "name": "default",
         "folders": [
+            "img"
+        ],
+        "files": [
+            "main.tex",
+            "setup.tex"
+        ],
+        "links": [
+            "ln -s %h/macros.tex %w/macros.tex"
+        ]
+    },
+    {
+        "name": "out",
+        "folders": [
             "out",
             "img"
         ],

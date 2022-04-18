@@ -85,13 +85,14 @@ def populate(packages):
             print('\t' + package['name'])
             if 'setup' in package:
                 setup_lines.append(f"% ---------- {package['name']} ----------\n")
-                cmds = ['\\' + cmd + '\n' for cmd in package['setup']['cmds']]
+                cmds = [cmd + '\n' for cmd in package['setup']['cmds']]
                 setup_lines.extend(cmds)
                 setup_lines.append("\n")
 
             if 'main' in package:
-                cmds = ['\\' + cmd + '\n' for cmd in package['main']['cmds']]
+                cmds = [cmd + '\n' for cmd in package['main']['cmds']]
                 main_lines.extend(cmds)
+                main_lines.append("\n")
 
     main_lines.extend(main_wrapper['end'])
 
