@@ -43,6 +43,61 @@
         }
     },
     {
+        "name": "bold-figure",
+        "setup": {
+            "cmds" : [
+                "usepackage[labelfont=bf]{caption} % bold figur labels"
+            ]
+        }
+    },
+    {
+        "name": "pdfpages",
+        "setup": {
+            "cmds" : [
+                "usepackage{pdfpages} % include other pdfs in document"
+            ]
+        }
+    },
+    {
+        "name": "tikz",
+        "setup": {
+            "cmds": [
+                "usepackage{tikz}",
+                "usepackage{pgfplots}",
+                "usetikzlibrary{calc}"
+            ]
+        }
+    },
+    {
+        "name": "fancy-chapters",
+        "setup": {
+            "cmds":[
+                "usepackage{titlesec,color} % pakker til fancy kapitler",
+                "definecolor{sepcolor}{gray}{0.75} % chapter seperatior color",
+                "newcommand{\\hsp}{\\hspace{20pt}} % spacing from seperatior",
+                "titleformat{\\chapter}[hang]{\\Huge\\bfseries}{\\thispagestyle{fancy}\\thechapter\\hsp\\textcolor{sepcolor}{|}\\hsp}{0pt}{\\Huge\\bfseries} % format for chapter heading"
+            ]
+        }
+    },
+    {
+        "name": "header-footer",
+        "setup": {
+            "cmds":[
+                "usepackage{fancyhdr,lastpage}",
+                "pagestyle{fancy}",
+                "fancyhf{}",
+                "rhead{Balder W. Holst}",
+                "lhead{left head}",
+                "rfoot{Side \\thepage \\ af \\pageref{LastPage}} % sidetal"
+            ]
+        },
+        "main": {
+            "cmds": [
+                "pagestyle{fancy}"
+            ]
+        }
+    },
+    {
         "name": "bibliography",
         "files": "sources.bib",
         "setup": {

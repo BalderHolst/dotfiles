@@ -17,7 +17,7 @@ Plug 'Chiel92/vim-autoformat'
 
 
 " Autopair
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 
 " Theme
 Plug 'morhetz/gruvbox'

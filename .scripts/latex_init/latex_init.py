@@ -1,4 +1,4 @@
-# type: a
+# type: n
 
 import json
 
@@ -37,10 +37,10 @@ def create_structure(name):
         os.system(f"touch {working_dir}/{file}")
 
     for link in structure['links']:
-        print(link.replace('%w', working_dir).replace('%h',home_dir))
         link = link.replace('%w', working_dir).replace('%h',home_dir)
         os.system(link)
-        link_location = str(link.split(' ')[-1])
+        link_location = link.split(' ')[-1].replace(working_dir + "/", '')
+        print(link_location)
         files[link_location.split('/')[-1]] = link_location
 
     # make dotfile for navigation
@@ -63,6 +63,8 @@ def populate(packages):
                 "\n"
                 ],
             "end": [
+                "\\chapter{Packages}\n",
+                "\n\n".join(packages),
                 "\n"
                 "\\end{document}\n"
                 ]
@@ -114,6 +116,9 @@ def init(structure, template):
 
 if __name__ == "__main__":
 
-    init(sys.argv[1], sys.argv[2])
+    if (len(sys.argv) == 2):
+        init("default", sys.argv[1])
+    else:
+        init(sys.argv[1], sys.argv[2])
 
 

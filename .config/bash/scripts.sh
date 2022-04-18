@@ -1,11 +1,10 @@
 #!/bin/bash
 
-paths=$(find ~/.scripts | grep -E '.sh|.py')
+paths=$(find ~/.scripts | grep -E '\.sh|\.py')
 
 
 for path in $paths
 do
-
     t=$(head -n 5 $path | grep 'type:' | awk {'print $NF'})
 
     filename=$(echo "$path" | awk -F/ {'print $NF'})

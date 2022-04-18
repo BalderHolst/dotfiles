@@ -1,20 +1,13 @@
 #!/bin/bash
 # type: f
 
-path_file=~/.scripts/clatex/path.txt
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+
+structure=$(cat .structure.json) || exit 1
+
+path=$(echo "$structure" | grep "main.tex" | sed s/,//g | sed s/\"//g | sed s/\ //g)
+out=$(echo "$structure" | grep "out\"" | sed s/,//g | sed s/\"//g | sed s/\ //g)
 
 
-#cat $path_file | xargs -I{} notify-send test 'path: {}'
+pdflatex -output-dir "$out" "$path"
 
-
-
-#cd /home/Balder/Documents/Skole/Gym/SRP/latex
-p=`cat $path_file | rev | cut -d/ -f2- | rev`
-
-cd $p
-cat $path_file | xargs -I{} pdflatex {}
-
-#pdflatex $dir_path$file_name.tex
-#zathura $dir_path$file_name.pdf
-
-echo done!
