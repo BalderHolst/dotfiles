@@ -1,0 +1,18 @@
+[
+    {
+        "name": "default",
+        "folders": [
+            "out",
+            "img"
+        ],
+        "files": [
+            "main.tex",
+            "setup.tex",
+            "out/main.pdf"
+        ],
+        "links": [
+            "ln -s %w/out/main.pdf %w/main.pdf",
+            "ln -s %h/macros.tex %w/macros.tex"
+        ]
+    }
+]

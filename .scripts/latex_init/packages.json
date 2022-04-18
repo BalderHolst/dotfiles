@@ -1,0 +1,76 @@
+[
+    {
+        "name": "type-report",
+        "setup": {
+            "cmds": ["documentclass[10pt,a4paper]{report}"]
+        }
+    },
+    {
+        "name": "essentials",
+        "setup":{
+            "cmds": [
+                "usepackage[utf8]{inputenc}",
+                "usepackage[T1]{fontenc}",
+                "usepackage{amsmath}",
+                "usepackage{amsfonts}",
+                "usepackage{amssymb}",
+                "usepackage{amsthm}"
+            ]
+        }
+    },
+    {
+        "name": "basic",
+        "setup": {
+            "cmds": [
+                "usepackage[margin=2.3cm]{geometry} % set margin",
+                "usepackage{graphicx} % extended images",
+                "graphicspath{ {img/} } % image folder",
+                "usepackage{hyperref} % clickable links",
+                "usepackage{setspace} % set line spacing",
+                "setstretch{1.15} % line spacing",
+                "usepackage{blindtext} % dummy text",
+                "setlength{\\parindent}{0em} %indryk ikke afsnit"
+            ]
+        }
+    },
+    {
+        "name": "dansk",
+        "setup": {
+            "cmds": [
+                "usepackage{icomma} % dansk komma",
+                "usepackage[danish]{babel} % gør automatiske tekser danske"
+            ]
+        }
+    },
+    {
+        "name": "bibliography",
+        "files": "sources.bib",
+        "setup": {
+            "cmds": [
+                "usepackage[sorting=nty,style=nature]{biblatex} % bibliography",
+                "addbibresource{sources.bib} %Imports bibliography file"
+            ]
+        },
+        "main": {
+            "cmds": [
+                "printbibliography"
+            ]
+        }
+    },
+    {
+        "name": "bibliography - dansk",
+        "files": "kilder.bib",
+        "setup": {
+            "cmds": [
+                "usepackage[sorting=nty,style=nature]{biblatex} % bibliography",
+                "addbibresource{kilder.bib} %Imports bibliography file"
+            ]
+        },
+        "main": {
+            "cmds": [
+                "printbibliography[title=Litteraturliste]"
+            ]
+        }
+    }
+]
+
