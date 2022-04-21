@@ -53,6 +53,7 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+p exec --no-startup-id i3-dmenu-desktop
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -176,24 +177,25 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps
-for_window [class="^.*"] border pixel 2 
+for_window [class="^.*"] border pixel 1 
 gaps inner 8 
 gaps outer 2
 
 # colors
-set $fucused-color       #55555f
-set $bg-color 	         #2f343f
+set $fucused-color       #98971a
+set $bg-color 	         #282828
 set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
+set $text-color          #ebdbb2
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
+set $indicator-color     #b2c75e
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $fucused-color      $fucused-color     $text-color          #888888
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #888888
-client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #888888
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #888888
+client.focused          $fucused-color      $fucused-color     $text-color          $indicator-color
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
 
 # thin borders
 hide_edge_borders both
@@ -247,7 +249,9 @@ exec_always dunst
 # Autoscripts
 exec_always autoscripts
 
+# gym
+exec_always notify-send "$(gym) dage tilbage af gym!"
+
 # ========================= LAUNCH PROGRAMS ==========================
 bindsym $mod+ae exec config
-
 

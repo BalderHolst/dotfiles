@@ -160,6 +160,9 @@ set path=**		    " setter hvor :e [file] søger
 " No highlighted search
 set nohlsearch
 
+" H og L til navigation
+nmap H ^
+nmap L $
 
 " Set the color scheme.
 colorscheme gruvbox

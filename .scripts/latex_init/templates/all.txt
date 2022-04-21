@@ -1,0 +1,11 @@
+type-report
+essentials
+basic
+dansk
+bold-figure
+pdfpages
+tikz
+fancy-chapters
+titlepage - custom
+header-footer
+bibliography - dansk

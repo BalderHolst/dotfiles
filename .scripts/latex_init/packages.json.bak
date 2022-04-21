@@ -1,0 +1,171 @@
+[
+    {
+        "name": "type-report",
+        "setup": {
+            "cmds": ["documentclass[10pt,a4paper]{report}"]
+        }
+    },
+    {
+        "name": "essentials",
+        "setup":{
+            "cmds": [
+                "usepackage[utf8]{inputenc}",
+                "usepackage[T1]{fontenc}",
+                "usepackage{amsmath}",
+                "usepackage{amsfonts}",
+                "usepackage{amssymb}",
+                "usepackage{amsthm}"
+            ]
+        }
+    },
+    {
+        "name": "basic",
+        "setup": {
+            "cmds": [
+                "usepackage[margin=2.3cm]{geometry} % set margin",
+                "usepackage{graphicx} % extended images",
+                "graphicspath{ {img/} } % image folder",
+                "usepackage{hyperref} % clickable links",
+                "usepackage{setspace} % set line spacing",
+                "setstretch{1.15} % line spacing",
+                "usepackage{blindtext} % dummy text",
+                "setlength{\\parindent}{0em} %indryk ikke afsnit"
+            ]
+        }
+    },
+    {
+        "name": "dansk",
+        "setup": {
+            "cmds": [
+                "usepackage{icomma} % dansk komma",
+                "usepackage[danish]{babel} % gør automatiske tekser danske"
+            ]
+        }
+    },
+    {
+        "name": "bold-figure",
+        "setup": {
+            "cmds" : [
+                "usepackage[labelfont=bf]{caption} % bold figur labels"
+            ]
+        }
+    },
+    {
+        "name": "pdfpages",
+        "setup": {
+            "cmds" : [
+                "usepackage{pdfpages} % include other pdfs in document"
+            ]
+        }
+    },
+    {
+        "name": "tikz",
+        "setup": {
+            "cmds": [
+                "usepackage{tikz}",
+                "usepackage{pgfplots}",
+                "usetikzlibrary{calc}"
+            ]
+        }
+    },
+    {
+        "name": "fancy-chapters",
+        "setup": {
+            "cmds":[
+                "usepackage{titlesec,color} % pakker til fancy kapitler",
+                "definecolor{sepcolor}{gray}{0.75} % chapter seperatior color",
+                "newcommand{\\hsp}{\\hspace{20pt}} % spacing from seperatior",
+                "titleformat{\\chapter}[hang]{\\Huge\\bfseries}{\\thispagestyle{fancy}\\thechapter\\hsp\\textcolor{sepcolor}{|}\\hsp}{0pt}{\\Huge\\bfseries} % format for chapter heading"
+            ]
+        }
+    },
+    {
+        "name": "titlepage - custom",
+        "main": {
+            "cmds": [
+                "begin{titlepage}",
+                "begin{center}",
+                "vspace{5cm}",
+                "rule{.6\\textwidth}{0.4pt} \\\\",
+                "vspace{5mm}",
+                "huge Title Goes Here \\\\",
+                "vspace{1mm}",
+                "rule{.6\\textwidth}{0.4pt} \\\\",
+                "vspace{4mm}",
+                "Large",
+                "\\",
+                "vspace{5cm}",
+                "large",
+                "\\",
+                "vspace{1cm}",
+                "Balder Westergaard Holst",
+                "end{center}",
+                "vspace{2cm}",
+                "end{titlepage}"
+            ]
+        }
+    },
+    {
+        "name": "titlepage",
+        "setup": {
+            "cmds": [
+                "title{Title Goes Here}",
+                "author{Balder W. Holst}"
+            ]
+        },
+        "main": {
+            "cmds": [
+                "maketitle"
+            ]
+        }
+    },
+    {
+        "name": "header-footer",
+        "setup": {
+            "cmds":[
+                "usepackage{fancyhdr,lastpage}",
+                "pagestyle{fancy}",
+                "fancyhf{}",
+                "rhead{Balder W. Holst}",
+                "lhead{left head}",
+                "rfoot{Side \\thepage \\ af \\pageref{LastPage}} % sidetal"
+            ]
+        },
+        "main": {
+            "cmds": [
+                "pagestyle{fancy}"
+            ]
+        }
+    },
+    {
+        "name": "bibliography",
+        "files": "sources.bib",
+        "setup": {
+            "cmds": [
+                "usepackage[sorting=nty,style=nature]{biblatex} % bibliography",
+                "addbibresource{sources.bib} %Imports bibliography file"
+            ]
+        },
+        "main": {
+            "cmds": [
+                "printbibliography"
+            ]
+        }
+    },
+    {
+        "name": "bibliography - dansk",
+        "files": "kilder.bib",
+        "setup": {
+            "cmds": [
+                "usepackage[sorting=nty,style=nature]{biblatex} % bibliography",
+                "addbibresource{kilder.bib} %Imports bibliography file"
+            ]
+        },
+        "main": {
+            "cmds": [
+                "printbibliography[title=Litteraturliste]"
+            ]
+        }
+    }
+]
+

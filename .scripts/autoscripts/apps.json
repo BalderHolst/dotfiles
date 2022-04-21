@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Dotfiles --> Git",
+        "frequency": 1,
+        "cmd": "dotgit commit -a -m \"autocommit %d\" ; notify-send dotgit \"no push script\"",
+        "last_checked": 107
+    }
+]

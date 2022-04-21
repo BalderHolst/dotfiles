@@ -24,9 +24,9 @@ export -f dotgit
 export CONFIGS_FILE="$HOME/.scripts/edit_configs/configs.txt"
 
 # confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-alias rm='rm -i'
+# alias cp="cp -i"
+#alias mv='mv -i'
+#alias rm='rm -i'
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
