@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 paths=$(find ~/.scripts | grep -E '\.sh|\.py')
 

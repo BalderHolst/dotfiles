@@ -6,6 +6,9 @@ call plug#begin('~/.vim/plugged')
 " syntax check python
 Plug 'w0rp/ale'
 
+" fish highlight
+Plug 'khaveesh/vim-fish-syntax'
+
 " Autocomplete for python
 "Plug 'ncm2/ncm2'
 "Plug 'roxma/nvim-yarp'
@@ -56,6 +59,10 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 
+" fish!
+if &shell =~# 'fish$'
+    set shell=sh
+endif
 
 " ------------------- Python -------------------
 
@@ -119,6 +126,7 @@ autocmd BufNewFile,BufRead *.tex map å :w<CR>:!~/.scripts/clatex/clatex.sh<CR>
 autocmd BufNewFile,BufRead *.py map å :w<CR>:!python %<CR>
 autocmd BufNewFile,BufRead *.R map å :w<CR>:!Rscript %<CR>
 autocmd BufNewFile,BufRead *.sh map å :w<CR>:!./%<CR>
+autocmd BufNewFile,BufRead *.fish map å :w<CR>:!./%<CR>
 
 "===================== latex ========================
 

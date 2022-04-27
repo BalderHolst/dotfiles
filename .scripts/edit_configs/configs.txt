@@ -8,3 +8,4 @@ i3-blocks - /home/Balder/.config/i3/i3blocks.conf
 dunst - /home/Balder/.config/dunst/dunstrc
 Xresources - /home/Balder/.config/X/.Xresources
 bash-scripts - /home/Balder/.config/bash/scripts.sh
+fish - /home/Balder/.config/fish/config.fish

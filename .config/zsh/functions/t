@@ -1,0 +1,16 @@
+#!/bin/bash
+
+t () {
+    echo "det virker!"
+}
+
+paths=$(find ~/.scripts | grep -E '\.sh|\.py')
+
+for p in $paths
+do
+    ex=$(echo "$p" | awk -F '/' '{print $NF}' | awk -F. '{print $1}')
+
+    echo "$ex $p"
+
+done
+

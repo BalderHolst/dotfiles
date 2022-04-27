@@ -1,0 +1,32 @@
+#!/bin/bash
+
+file="$HOME/.config/bash/script_functions.sh"
+
+echo "" > $file
+
+
+# bash scripts
+
+paths=$(find ~/.scripts | grep '.sh')
+
+for path in $paths
+do
+    name=$(echo "$path" | awk -F '/' '{print $NF}' | awk -F. '{print $1}')
+
+    echo "$name () { $path } ; export -f $name" >> $file
+done
+
+
+echo "" >> $file
+
+# python scripts
+
+paths=$(find ~/.scripts | grep '.py')
+
+for path in $paths
+do
+    name=$(echo "$path" | awk -F '/' '{print $NF}' | awk -F. '{print $1}')
+
+    echo "$name () { python $path } ; export -f $name" >> $file
+done
+

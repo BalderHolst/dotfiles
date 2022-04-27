@@ -1,8 +1,8 @@
-#/bin/bash
+#/bin/sh
 
 
 # Aliases and functions for all scripts in ~/.scripts
-# source ~/.config/bash/scripts.sh
+#source ~/.config/bash/scripts.sh
 
 
 # Navigation
@@ -19,7 +19,6 @@ alias r=ranger
 
 # config management
 dotgit() { /usr/bin/git --git-dir=$HOME/.git-dotfiles/ --work-tree=$HOME "$@" ; }
-export -f dotgit
 
 export CONFIGS_FILE="$HOME/.scripts/edit_configs/configs.txt"
 
