@@ -11,8 +11,8 @@ end
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-map('i', '<M-l>', 'test!', { noremap = true, silent = true, callback = function()
-	if luasnip.expand_or_jumpable() then
-		luasnip.expand_or_jump()
+map('i', '<M-l>', '', { noremap = true, silent = true, callback = function()
+	if luasnip.jumpable(1) then
+		luasnip.jump(1)
 	end
 end })
