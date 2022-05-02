@@ -203,29 +203,33 @@ hide_edge_borders both
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        #status_command i3status
 
-	workspace_buttons yes
-	tray_output primary
+# Polybar
+exec_always polybar
 
-	#tray_padding 100
-
-	font pango:System San Francisco 10
-	position top
-	colors {
-
-        statusline $text-color
-
-		background $bg-color
-	   	separator #757575
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-	}
-}
+#bar {
+        #status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        ##status_command i3status
+#
+	#workspace_buttons yes
+	#tray_output primary
+#
+	##tray_padding 100
+#
+	#font pango:System San Francisco 10
+	#position top
+	#colors {
+#
+        #statusline $text-color
+#
+		#background $bg-color
+	   	#separator #757575
+		##                  border             background         text
+		#focused_workspace  $bg-color          $bg-color          $text-color
+		#inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+		#urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	#}
+#}
 
 
 # brightness
@@ -235,6 +239,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 10%- # decrease screen brig
 #new_window 1pixel
 
 # =========================== AUTOSTART ==============================
+
 
 # Wallpaper
 exec_always feh --bg-scale ~/Pictures/space.jpg
@@ -252,5 +257,7 @@ exec_always autoscripts
 exec_always notify-send "$(gym) dage tilbage af gym!"
 
 # ========================= LAUNCH PROGRAMS ==========================
-bindsym $mod+ae exec config
+
+bindsym $mod+c exec config
+bindsym $mod+w exec connect
 

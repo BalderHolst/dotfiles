@@ -9,3 +9,7 @@ dunst - /home/Balder/.config/dunst/dunstrc
 Xresources - /home/Balder/.config/X/.Xresources
 bash-scripts - /home/Balder/.config/bash/scripts.sh
 fish - /home/Balder/.config/fish/config.fish
+polybar - /home/Balder/.config/polybar/config.ini
+ranger-rc - /home/Balder/.config/ranger/rc.conf
+ranger-rifle - /home/Balder/.config/ranger/rifle.conf
+ranger-scope - /home/Balder/.config/ranger/scope.sh

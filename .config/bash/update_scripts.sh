@@ -1,26 +1,23 @@
 #!/bin/bash
 
-paths=$(find ~/.scripts | grep -E '\.sh|\.py')
+paths=$(find ~/.scripts | grep '\.sh')
 
+script_dir=$HOME/.config/script_links
 
-for path in $paths
+rm $script_dir/*
+
+for p in $paths
 do
-    t=$(head -n 5 $path | grep 'type:' | awk {'print $NF'})
-
-    filename=$(echo "$path" | awk -F/ {'print $NF'})
+    filename=$(echo "$p" | awk -F/ {'print $NF'})
 
 	name=$(echo "$filename" | awk -F. {'print $1'})
 	extention=$(echo "$filename" | awk -F. {'print $NF'})
     
     
-    runner=""
-    if [[ "$extention" = "py" ]]; then
-        runner="python "        
-    fi
-
     echo "linking $name"
 
-    echo "$runner$path \$@" > $script_dir/$name
+    echo -e "#!/bin/sh" > "$script_dir/$name"
+    echo "$p \$@" >> "$script_dir/$name"
     chmod +x $script_dir/$name
 
 done
