@@ -1,0 +1,3 @@
+kill $(pgrep polybar)
+
+polybar

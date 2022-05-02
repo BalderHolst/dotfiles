@@ -1,5 +1,3 @@
-# type: f
-
 from dateutil.relativedelta import relativedelta
 import datetime
 today = datetime.date.today()

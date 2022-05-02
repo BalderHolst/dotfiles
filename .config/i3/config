@@ -260,4 +260,6 @@ exec_always notify-send "$(gym) dage tilbage af gym!"
 
 bindsym $mod+c exec config
 bindsym $mod+w exec connect
+bindsym $mod+b exec reload_bar
+bindsym $mod+e exec open_dir
 
