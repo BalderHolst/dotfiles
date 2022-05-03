@@ -1,9 +1,12 @@
-dt - Desktop
-dc - Documents
-dl - Downloads
-mu - Music
-pics - Pictures
-test - test
-gym - Documents/Skole/Gym/3.\ G
-scripts - .scripts
-config - .config
+dt - /home/Balder/Desktop
+dc - /home/Balder/Documents
+dl - /home/Balder/Downloads
+mu - /home/Balder/Music
+pics - /home/Balder/Pictures
+test - /home/Balder/test
+gym - /home/Balder/Documents/Skole/Gym/3.\ G
+scripts - /home/Balder/.scripts
+config - /home/Balder/.config
+programmer - /home/Balder/apps
+root - /
+etc - /etc
