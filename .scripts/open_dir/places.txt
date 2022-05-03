@@ -1,7 +1,9 @@
-Desktop
-Documents
-Downloads
-Music
-Pictures
-test
-Documents/Skole/Gym/3.\ G
+dt - Desktop
+dc - Documents
+dl - Downloads
+mu - Music
+pics - Pictures
+test - test
+gym - Documents/Skole/Gym/3.\ G
+scripts - .scripts
+config - .config

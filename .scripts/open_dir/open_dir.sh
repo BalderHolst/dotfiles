@@ -2,4 +2,4 @@
 
 places="$HOME/.scripts/open_dir/places.txt"
 
-cat $places | dmenu -i -c -l 10 | xargs -I{} kitty $HOME/{}
+cat $places | dmenu -i -c -l 10 | awk -F ' - ' '{print $2}' | xargs -I{} kitty "$HOME/{}" echo "hello"
