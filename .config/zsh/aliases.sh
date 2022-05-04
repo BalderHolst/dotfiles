@@ -16,9 +16,10 @@ alias ...='cd ...'
 alias r=ranger
 
 
+# git
+alias gs='git status'
+alias gc='git commit'
 
-# config management
-dotgit() { /usr/bin/git --git-dir=$HOME/.git-dotfiles/ --work-tree=$HOME "$@" ; }
 
 export CONFIGS_FILE="$HOME/.scripts/edit_configs/configs.txt"
 

@@ -14,3 +14,4 @@ ranger-rc - /home/Balder/.config/ranger/rc.conf
 ranger-rifle - /home/Balder/.config/ranger/rifle.conf
 ranger-scope - /home/Balder/.config/ranger/scope.sh
 ranger-commands - /home/Balder/.config/ranger/commands.py
+zsh-aliases - /home/Balder/.config/zsh/aliases.sh

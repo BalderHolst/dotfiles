@@ -10,3 +10,5 @@ config - /home/Balder/.config
 programmer - /home/Balder/apps
 root - /
 etc - /etc
+rm - /home/Balder
+rm rm - /home/Balder
