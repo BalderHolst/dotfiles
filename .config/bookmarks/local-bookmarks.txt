@@ -5,10 +5,8 @@ mu - /home/Balder/Music
 pics - /home/Balder/Pictures
 test - /home/Balder/test
 gym - /home/Balder/Documents/Skole/Gym/3.\ G
-scripts - /home/Balder/.scripts
-config - /home/Balder/.config
-programmer - /home/Balder/apps
+scr - /home/Balder/.scripts
+con - /home/Balder/.config
+apps - /home/Balder/apps
 root - /
 etc - /etc
-rm - /home/Balder
-rm rm - /home/Balder

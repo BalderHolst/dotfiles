@@ -11,6 +11,8 @@ alias SRP='cd ~/Documents/Skole/Gym/SRP'
 alias ..='cd ..'
 alias ...='cd ...'
 
+# Bookmarks
+source $HOME/.config/bookmarks/baliases.sh
 
 #alias vimrc='nvim ~/.config/nvim/init.vim'
 alias r=ranger

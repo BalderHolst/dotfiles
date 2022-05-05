@@ -3,10 +3,11 @@
 dotgit() { /usr/bin/git --git-dir=$HOME/.git-dotfiles/ --work-tree=$HOME "$@" ; }
 
 case $1 in
+    "s")
+        dotgit status
+        exit 0
+        ;;
     "cp")
-        if [[ "$2" = "" ]] ; then
-            exit 1
-        fi
         dotgit commit -a -m "$2" && dotgit push
         exit 0
         ;;
@@ -15,11 +16,8 @@ case $1 in
         exit 0
         ;;
     "p")
-    dotgit push
-    exit 0
+        dotgit push
+        exit 0
 esac
-
-
-
 
 dotgit "$@"
