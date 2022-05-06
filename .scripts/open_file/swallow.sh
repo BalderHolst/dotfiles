@@ -2,8 +2,6 @@
 
 terminalid=$(xdotool getactivewindow)
 
-xdotool windowunmap $terminalid
-
-eval "$@" > /dev/null
+xdotool windowunmap $terminalid & eval "$@" > /dev/null
 
 xdotool windowmap $terminalid

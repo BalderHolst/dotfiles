@@ -31,6 +31,11 @@ class mt(Command):
         self.fm.run(f"mt {file}")
         self.fm.notify(f"moved {file}")
 
+class open(Command):
+    def execute(self):
+        file = self.fm.thisfile.path.split('/')[-1]
+        self.fm.run(f"o {file}")
+
 class my_edit(Command):
     # The so-called doc-string of the class will be visible in the built-in
     # help that is accessible by typing "?c" inside ranger.

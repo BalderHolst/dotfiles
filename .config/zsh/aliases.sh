@@ -1,9 +1,9 @@
 #/bin/sh
 
 
-# Aliases and functions for all scripts in ~/.scripts
-#source ~/.config/bash/scripts.sh
 
+alias ls=lsd
+alias ll='lsd -l'
 
 # Navigation
 alias scr='cd ~/.scripts'
