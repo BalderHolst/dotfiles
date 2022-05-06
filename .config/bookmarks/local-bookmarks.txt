@@ -1,8 +1,7 @@
 dt - /home/Balder/Desktop
 dc - /home/Balder/Documents
 dl - /home/Balder/Downloads
-mu - /home/Balder/Music
-pics - /home/Balder/Pictures
+img - /home/Balder/Pictures
 test - /home/Balder/test
 gym - /home/Balder/Documents/Skole/Gym/3.\ G
 scr - /home/Balder/.scripts
