@@ -212,4 +212,4 @@ bindsym $mod+w exec --no-startup-id connect
 bindsym $mod+b exec --no-startup-id reload_bar
 bindsym $mod+e exec --no-startup-id open_dir
 bindsym $mod+Shift+e exec --no-startup-id powerdown
-
+bindsym XF86PowerOff exec --no-startup-id powerdown
