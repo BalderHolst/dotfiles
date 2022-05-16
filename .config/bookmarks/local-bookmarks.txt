@@ -9,3 +9,4 @@ con - /home/Balder/.config
 apps - /home/Balder/apps
 root - /
 etc - /etc
+kollegier - /home/Balder/Documents/hjemmesider/Kollegier

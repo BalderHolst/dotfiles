@@ -200,9 +200,6 @@ exec_always --no-startup-id compton -f -D 1
 # notifications
 exec_always --no-startup-id dunst
 
-# gym
-exec_always --no-startup-id notify-send "$(gym) dage tilbage af gym!"
-
 # hurtig key-repeat
 exec_always --no-startup-id xset r rate 220 50
 

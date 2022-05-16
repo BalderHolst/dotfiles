@@ -22,6 +22,8 @@ alias r=ranger
 alias gs='git status'
 alias gc='git commit'
 
+# Groff
+alias groffpdf='groff -ms -Tpdf'
 
 export CONFIGS_FILE="$HOME/.scripts/edit_configs/configs.txt"
 
@@ -50,4 +52,10 @@ ex ()
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+topdf () {
+    name="$(echo "$1" | cut -d. -f1).pdf"
+    pandoc -o "$name" "$1"
+    swallow zathura "$(echo "$name" | sed 's/ /\\ /g')"
 }
