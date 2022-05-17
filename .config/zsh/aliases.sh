@@ -14,9 +14,8 @@ alias ...='cd ...'
 # Bookmarks
 source $HOME/.config/bookmarks/baliases.sh
 
-#alias vimrc='nvim ~/.config/nvim/init.vim'
 alias r=ranger
-
+alias mail=neomutt
 
 # git
 alias gs='git status'

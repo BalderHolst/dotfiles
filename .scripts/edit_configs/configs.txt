@@ -16,3 +16,5 @@ ranger-scope - /home/Balder/.config/ranger/scope.sh
 ranger-commands - /home/Balder/.config/ranger/commands.py
 zsh-aliases - /home/Balder/.config/zsh/aliases.sh
 cron - /etc/anacrontab
+muttrc - /home/Balder/.config/mutt/muttrc
+nvim-python - /home/Balder/.config/nvim/ftplugin/python.vim

@@ -10,6 +10,7 @@ Plug 'tpope/vim-commentary' " comment out lines with gcc and gc
 Plug 'junegunn/goyo.vim' " center text
 Plug 'tpope/vim-surround' " cs - change surround or ys(obj)(bracket)
 Plug 'terryma/vim-multiple-cursors'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 "definer learder til mellemrum
@@ -25,7 +26,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 
 " Goyo plugin makes text more readable when writing prose:
-map <leader>f :Goyo \| set linebreak<CR>
+map <silent> <leader>f :Goyo \| set linebreak<CR>
 
 " --------------------- COC --------------------
 " Use tab for trigger completion with characters ahead and navigate.
@@ -48,11 +49,6 @@ function! s:check_back_space() abort
 	return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 
 " Use K to show documentation in preview window.
@@ -68,6 +64,11 @@ function! s:show_documentation()
 	endif
 endfunction
 
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 "===================== AUTOCOMPILE ==================
 
