@@ -10,3 +10,6 @@ apps - /home/Balder/apps
 root - /
 etc - /etc
 kollegier - /home/Balder/Documents/hjemmesider/Kollegier
+noter - /home/Balder/Documents/Skole/Balders Noter
+bmark - /home/Balder/.scripts/bookmarks
+srp - /home/Balder/Documents/Skole/Gym/3. G/SRP

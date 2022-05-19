@@ -7,7 +7,6 @@ alias ll='lsd -l'
 
 # Navigation
 alias scr='cd ~/.scripts'
-alias SRP='cd ~/Documents/Skole/Gym/SRP'
 alias ..='cd ..'
 alias ...='cd ...'
 

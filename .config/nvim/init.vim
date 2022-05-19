@@ -68,17 +68,15 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+"detect filetypes
+autocmd BufNewFile,BufRead *.tex set filetype=tex
+
 "===================== AUTOCOMPILE ==================
 
-autocmd BufNewFile,BufRead *.tex map å :w<CR>:!~/.scripts/clatex/clatex.sh<CR>
 autocmd BufNewFile,BufRead *.R map å :w<CR>:!Rscript %<CR>
 autocmd BufNewFile,BufRead *.sh map å :w<CR>:!./%<CR>
 autocmd BufNewFile,BufRead *.fish map å :w<CR>:!./%<CR>
 
-"===================== latex ========================
-
-autocmd BufNewFile,BufRead *.tex set filetype=tex
-autocmd BufNewFile,BufRead *.tex set spell! spelllang=da
 
 "===================== SPELLING ==================
 
