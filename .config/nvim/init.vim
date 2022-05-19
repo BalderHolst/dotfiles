@@ -28,9 +28,8 @@ let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 " Goyo plugin makes text more readable when writing prose:
 nmap <silent> <leader>f :Goyo \| set linebreak<CR>
 
-if exists('AutoPairsLoaded')
-    nmap æ :hello
-end
+" AutoPairs
+let g:AutoPairsFlyMode = 1
 
 " --------------------- COC --------------------
 " Use tab for trigger completion with characters ahead and navigate.
