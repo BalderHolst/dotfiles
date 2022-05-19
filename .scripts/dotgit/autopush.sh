@@ -2,6 +2,6 @@
 
 source $HOME/.scripts/dotgit/dotgit.sh
 
-dotgit commit -a -m "auto" | xargs -I{} notify-send "dotgit autopush" "{}"
+msg=$(dotgit commit -a -m "auto" && dotgit push)
 
 notify-send "dotgit autopush" "$msg"
