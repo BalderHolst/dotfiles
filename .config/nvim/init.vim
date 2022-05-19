@@ -10,7 +10,7 @@ Plug 'tpope/vim-commentary' " comment out lines with gcc and gc
 Plug 'junegunn/goyo.vim' " center text
 Plug 'tpope/vim-surround' " cs - change surround or ys(obj)(bracket)
 Plug 'terryma/vim-multiple-cursors'
-" Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 "definer learder til mellemrum
@@ -26,25 +26,29 @@ let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 
 " Goyo plugin makes text more readable when writing prose:
-map <silent> <leader>f :Goyo \| set linebreak<CR>
+nmap <silent> <leader>f :Goyo \| set linebreak<CR>
+
+if exists('AutoPairsLoaded')
+    nmap æ :hello
+end
 
 " --------------------- COC --------------------
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ CheckBackspace() ? "\<TAB>" :
-      \ coc#refresh()
+            \ pumvisible() ? "\<C-n>" :
+            \ CheckBackspace() ? "\<TAB>" :
+            \ coc#refresh()
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <TAB> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+            \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! s:check_back_space() abort
-	let col = col('.') - 1
-	return !col || getline('.')[col - 1]  =~# '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 
@@ -53,13 +57,13 @@ endfunction
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-	if (index(['vim','help'], &filetype) >= 0)
-		execute 'h '.expand('<cword>')
-	elseif (coc#rpc#ready())
-		call CocActionAsync('doHover')
-	else
-		execute '!' . &keywordprg . " " . expand('<cword>')
-	endif
+    if (index(['vim','help'], &filetype) >= 0)
+        execute 'h '.expand('<cword>')
+    elseif (coc#rpc#ready())
+        call CocActionAsync('doHover')
+    else
+        execute '!' . &keywordprg . " " . expand('<cword>')
+    endif
 endfunction
 
 " GoTo code navigation.
@@ -120,8 +124,8 @@ set shiftwidth=4
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save. & reset cursor position
- 	autocmd BufWritePre * let currPos = getpos(".")
-	autocmd BufWritePre * %s/\s\+$//e
-	autocmd BufWritePre * %s/\n\+\%$//e
-	autocmd BufWritePre *.[ch] %s/\%$/\r/e
-  	autocmd BufWritePre * cal cursor(currPos[1], currPos[2])
+autocmd BufWritePre * let currPos = getpos(".")
+autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\n\+\%$//e
+autocmd BufWritePre *.[ch] %s/\%$/\r/e
+autocmd BufWritePre * cal cursor(currPos[1], currPos[2])
