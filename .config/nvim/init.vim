@@ -10,7 +10,7 @@ Plug 'tpope/vim-commentary' " comment out lines with gcc and gc
 Plug 'junegunn/goyo.vim' " center text
 Plug 'tpope/vim-surround' " cs - change surround or ys(obj)(bracket)
 Plug 'terryma/vim-multiple-cursors'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 "definer learder til mellemrum
