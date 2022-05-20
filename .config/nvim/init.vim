@@ -1,5 +1,15 @@
+set nocompatible
 filetype plugin indent on
+filetype off
 
+" Vundle Plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'godlygeek/tabular'
+Plugin 'preservim/vim-markdown'
+call vundle#end()
+
+" Plug plugins
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'SirVer/ultisnips'
