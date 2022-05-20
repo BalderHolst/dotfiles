@@ -13,3 +13,4 @@ kollegier - /home/Balder/Documents/hjemmesider/Kollegier
 noter - /home/Balder/Documents/Skole/Balders\ Noter
 bmark - /home/Balder/.scripts/bookmarks
 srp - /home/Balder/Documents/Skole/Gym/3.\ G/SRP
+eksamen - /home/Balder/Documents/Skole/Gym/3. G/Eksamen/Historie
