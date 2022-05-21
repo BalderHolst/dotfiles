@@ -20,3 +20,4 @@ muttrc - /home/Balder/.config/mutt/muttrc
 nvim-python - /home/Balder/.config/nvim/ftplugin/python.vim
 nvim-markdown - /home/Balder/.config/nvim/ftplugin/markdown.vim
 nvim-latex - /home/Balder/.config/nvim/ftplugin/tex.vim
+nvim-rust - /home/Balder/.config/nvim/ftplugin/rust.vim
