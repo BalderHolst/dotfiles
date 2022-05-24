@@ -18,3 +18,6 @@ map å :w<CR>:!md-pdf %<CR>
 
 nmap j gj
 nmap k gk
+
+
+autocmd VimEnter * :Goyo | set linebreak

@@ -21,3 +21,4 @@ nvim-python - /home/Balder/.config/nvim/ftplugin/python.vim
 nvim-markdown - /home/Balder/.config/nvim/ftplugin/markdown.vim
 nvim-latex - /home/Balder/.config/nvim/ftplugin/tex.vim
 nvim-rust - /home/Balder/.config/nvim/ftplugin/rust.vim
+nvim-words - /home/Balder/.config/nvim/spell/da.utf-8.add
