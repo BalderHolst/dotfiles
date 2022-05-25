@@ -19,6 +19,7 @@ alias mail=neomutt
 # git
 alias gs='git status'
 alias gc='git commit'
+alias gp='git push'
 
 # Groff
 alias groffpdf='groff -ms -Tpdf'

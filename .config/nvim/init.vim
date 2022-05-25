@@ -21,13 +21,18 @@ Plug 'junegunn/goyo.vim' " center text
 Plug 'tpope/vim-surround' " cs - change surround or ys(obj)(bracket)
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
+Plug 'nvim-lua/plenary.nvim' " Telescope dependency
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " telescope preview highlight.
+Plug 'fannheyward/telescope-coc.nvim' " coc + telescope
 call plug#end()
 
 "definer learder til mellemrum
 let mapleader=" "
-"======================= Plugins ==================
+"======================= Plugins =================
 
-map <F3> :NERDTreeToggle<CR>
+execute(":lua require('telescope').load_extension('coc')")
 
 " snippets
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -83,6 +88,11 @@ nmap <silent> gr <Plug>(coc-references)
 
 "detect filetypes
 autocmd BufNewFile,BufRead *.tex set filetype=tex
+
+" -------------------- Telescope --------------------
+nmap ff :Telescope find_files<CR>
+
+
 
 "===================== AUTOCOMPILE ==================
 
