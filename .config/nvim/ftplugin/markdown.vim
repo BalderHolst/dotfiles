@@ -21,3 +21,6 @@ nmap k gk
 
 
 autocmd VimEnter * :Goyo | set linebreak
+
+" obsidian links
+nmap <leader>l :luafile ~/.config/nvim/obsidian-links.lua<CR>

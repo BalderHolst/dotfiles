@@ -20,6 +20,8 @@ alias mail=neomutt
 alias gs='git status'
 alias gc='git commit'
 alias gp='git push'
+alias gaa='git add .'
+alias gca='git add . && git commit'
 
 # Groff
 alias groffpdf='groff -ms -Tpdf'

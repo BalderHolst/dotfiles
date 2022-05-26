@@ -26,6 +26,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " telescope preview highlight.
 Plug 'fannheyward/telescope-coc.nvim' " coc + telescope
+Plug 'BalderHolst/obsidian-links' " MIN extention
 call plug#end()
 
 "definer learder til mellemrum
