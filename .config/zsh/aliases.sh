@@ -1,6 +1,6 @@
 #/bin/sh
 
-
+alias nvim-lua='nvim -u $HOME/.config/nvim-lua/init.lua'
 
 alias ls=lsd
 alias ll='lsd -l'
