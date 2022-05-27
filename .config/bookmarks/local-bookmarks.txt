@@ -16,3 +16,4 @@ srp - /home/Balder/Documents/Skole/Gym/3.\ G/SRP
 eksamen - /home/Balder/Documents/Skole/Gym/3.\ G/Eksamen/Historie
 oindex - /home/Balder/Projects/obsidian-index
 nvim - /home/Balder/.config/nvim
+slægtsregister - /home/Balder/Projects/slægtsregister
