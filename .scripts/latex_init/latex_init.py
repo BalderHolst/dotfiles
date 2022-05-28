@@ -99,17 +99,37 @@ def populate(packages):
     write_lines(files['setup.tex'],setup_lines)
     write_lines(files['main.tex'],main_lines)
 
+def packages_wizard():
+    chosen = []
+    packages = load_packages()
+
+    for package in packages:
+        response = None
+        while (True):
+            response = input(f"Include package \"{package['name']}\" (y/N): ")
+            if response == "" or response == "y" or response == "n":
+                break
+            print(f"input either y, n or [enter] (you entered \"{response}\")")
+        if response == "y":
+            chosen.append(package['name'])
+
+    return(chosen)
+
+
 def init(structure, template):
     create_structure(structure)
     
     packages = []
 
-    try:
-        with open(f"{home_dir}/templates/{template}.txt", 'r') as f:
-            packages = f.read().split('\n')
-    except FileNotFoundError:
-        print(f"No template with the name {template}. Valid templates: " + str(os.listdir(home_dir + "/templates")).replace(".txt",''))
-        quit(1)
+    if template == "wizard":
+        packages = packages_wizard()
+    else:
+        try:
+            with open(f"{home_dir}/templates/{template}.txt", 'r') as f:
+                packages = f.read().split('\n')
+        except FileNotFoundError:
+            print(f"No template with the name {template}. Valid templates: " + str(os.listdir(home_dir + "/templates")).replace(".txt",''))
+            quit(1)
 
     populate(packages)
 
@@ -117,7 +137,9 @@ def init(structure, template):
 
 if __name__ == "__main__":
 
-    if (len(sys.argv) == 2):
+    if len(sys.argv) == 1:
+        init("default", "wizard")
+    elif (len(sys.argv) == 2):
         init("default", sys.argv[1])
     else:
         init(sys.argv[1], sys.argv[2])
