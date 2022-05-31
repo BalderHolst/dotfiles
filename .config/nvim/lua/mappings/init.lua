@@ -3,6 +3,7 @@ local opts = { noremap = true }
 
 vim.g.mapleader = ' '
 
+tools = require("mappings.tools")
 
 
 -- Spelling
@@ -20,4 +21,3 @@ map('n', '<c-k>', '<c-w>k', opts)
 -- Plugins
 map('n', 'ff', ':Telescope find_files<cr>', opts)
 map('n', '<leader>f', ':Goyo | set linebreak <cr>', opts)
-
