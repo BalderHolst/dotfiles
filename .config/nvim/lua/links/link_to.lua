@@ -28,7 +28,7 @@ M.link_to = function(opts)
         end
     end)()
 
-    function split (inputstr, sep)
+    function Split (inputstr, sep)
         if sep == nil then
             sep = "%s"
         end
@@ -49,7 +49,7 @@ M.link_to = function(opts)
             actions.select_default:replace(function()
                 actions.close(prompt_bufnr)
                 local selection = action_state.get_selected_entry()
-                local split_path = split(selection[1], "/")
+                local split_path = Split(selection[1], "/")
                 vim.api.nvim_put({ split_path[#split_path] }, "", false, true)
             end)
             return true

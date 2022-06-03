@@ -14,6 +14,8 @@ wo.linebreak = true
 -- mappings
 map('n', 'j', 'gj', opts)
 map('n', 'k', 'gk', opts)
+map('n', '<leader>l', ':lua require("plugins.links").link_to()<cr>', opts)
+map('n', '<leader>t', ':lua require("plugins.links").follow_link()<cr>', opts)
 
 
 -- autocmd
