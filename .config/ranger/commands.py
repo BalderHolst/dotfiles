@@ -36,6 +36,11 @@ class open(Command):
         file = self.fm.thisfile.path.split('/')[-1]
         self.fm.run(f"o {file}")
 
+class open_dir(Command):
+    def execute(self):
+        # self.fm.run("nvim -c 'Telescope find_files")
+        self.fm.run('nvim "$(pwd)/" -c "Telescope find_files"')
+
 class my_edit(Command):
     # The so-called doc-string of the class will be visible in the built-in
     # help that is accessible by typing "?c" inside ranger.

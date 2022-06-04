@@ -1,6 +1,6 @@
 #/bin/sh
 
-alias nvim-lua='nvim -u $HOME/.config/nvim-lua/init.lua'
+alias od='nvim "$(pwd)" -c "Telescope find_files"'
 
 alias ls=lsd
 alias ll='lsd -l'

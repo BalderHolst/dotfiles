@@ -209,8 +209,8 @@ exec_always --no-startup-id xset r rate 220 50
 
 bindsym $mod+c exec --no-startup-id config
 bindsym $mod+w exec --no-startup-id connect
-bindsym $mod+b exec --no-startup-id reload_bar
+bindsym $mod+Shift+b exec --no-startup-id reload_bar
 bindsym $mod+e exec --no-startup-id open_dir
 bindsym $mod+Shift+e exec --no-startup-id powerdown
 bindsym XF86PowerOff exec --no-startup-id powerdown
-bindsym $mod+å exec --no-startup-id firefox
+bindsym $mod+b exec --no-startup-id firefox

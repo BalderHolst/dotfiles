@@ -26,3 +26,4 @@ wo.relativenumber = true
 
 -- Auto cmd
 cmd('au InsertEnter * norm zz')
+cmd('set path+=**')
