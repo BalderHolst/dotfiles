@@ -27,3 +27,13 @@ wo.relativenumber = true
 -- Auto cmd
 cmd('au InsertEnter * norm zz')
 cmd('set path+=**')
+
+-- vim.highlight.priorities.syntax = 250
+vim.api.nvim_set_hl(0, 'test', {["fg"]="#ed6b25"})
+cmd("syntax match test /\\[\\[.\\{-}\\]\\]/")
+
+-- [[test]]
+
+-- cmd("hi obslink guifg=#ed6b25")
+-- cmd("syntax match obslink /\\[\\[.\\{-}\\]\\]/")
+

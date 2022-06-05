@@ -1,13 +1,13 @@
 local o = vim.o
 local bo = vim.bo
 local wo = vim.wo
-local cmd = vim.cmd
+local cmd = vim.api.nvim_command
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true }
 
 -- My Plugin
-require("links")
+cmd("lua require('links')()")
 
 -- settings
 wo.conceallevel = 2
@@ -22,4 +22,4 @@ map('n', '<leader>t', ':lua require("links.functions").follow_link()<cr>', opts)
 
 
 -- autocmd
-cmd('au VimEnter * :Goyo')
+-- cmd('au VimEnter * :Goyo')

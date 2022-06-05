@@ -1,6 +1,8 @@
-local cmd = vim.cmd
+local cmd = vim.api.nvim_command
 
-print("links!")
+return(function ()
+	cmd("hi obslink guifg=#ed6b25")
+	cmd("syntax match obslink /\\[\\[.\\{-}\\]\\]/")
+end)
 
-cmd("hi test guifg=red guibg=green")
-cmd("syntax match test /test/")
+
