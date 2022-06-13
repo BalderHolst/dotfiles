@@ -4,8 +4,8 @@ dl - /home/Balder/Downloads
 img - /home/Balder/Pictures
 test - /home/Balder/test
 gym - /home/Balder/Documents/Skole/Gym/3.\ G
-scr - /home/Balder/.scripts
-con - /home/Balder/.config
+scripts - /home/Balder/.scripts
+config - /home/Balder/.config
 apps - /home/Balder/apps
 root - /
 etc - /etc
@@ -13,7 +13,6 @@ kollegier - /home/Balder/Documents/hjemmesider/Kollegier
 noter - /home/Balder/Documents/Skole/Balders\ Noter
 bmark - /home/Balder/.scripts/bookmarks
 srp - /home/Balder/Documents/Skole/Gym/3.\ G/SRP
-eksamen - /home/Balder/Documents/Skole/Gym/3.\ G/Eksamen/Historie
 oindex - /home/Balder/Projects/obsidian-index
 nvim - /home/Balder/.config/nvim
 slægtsregister - /home/Balder/Projects/slægtsregister
