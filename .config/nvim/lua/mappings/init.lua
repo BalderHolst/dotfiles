@@ -3,7 +3,7 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = ' '
 
-tools = require("mappings.tools")
+-- tools = require("mappings.tools")
 
 
 -- Spelling

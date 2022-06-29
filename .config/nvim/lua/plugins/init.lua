@@ -51,5 +51,8 @@ return require('packer').startup(function(use)
 	    -- run = ':TSUpdate'
     }
 
+    -- My Plugins
+    use "/home/Balder/Projects/nvim_plugins/obsidian_links"
+
 end)
 

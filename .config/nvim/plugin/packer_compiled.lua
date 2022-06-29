@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
     url = "https://github.com/akinsho/flutter-tools.nvim"
   },
-  ["formatter.nvim"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/formatter.nvim",
-    url = "https://github.com/mhartington/formatter.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -163,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  obsidian_links = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/obsidian_links",
+    url = "/home/Balder/Projects/nvim_plugins/obsidian_links"
   },
   ["packer.nvim"] = {
     loaded = true,
