@@ -33,3 +33,11 @@ cmd('set path+=**')
 vim.api.nvim_set_hl(0, 'test', {["fg"]="#ed6b25"})
 
 
+-- Autocmds - find med :help event
+
+
+-- Filetypes
+vim.api.nvim_create_autocmd("BufWinEnter", { pattern = "*.dart" , command = "set filetype=dart" })
+
+
+
