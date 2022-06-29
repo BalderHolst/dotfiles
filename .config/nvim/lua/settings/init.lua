@@ -14,11 +14,12 @@ o.splitbelow = true
 o.splitright = true
 o.clipboard = "unnamedplus"
 o.number = true
+o.smarttab = true
 
 -- Buffer Options
-bo.expandtab = true
-bo.tabstop = 4
-bo.shiftwidth = 4
+-- bo.expandtab = true
+bo.tabstop = 1
+bo.shiftwidth = 2
 bo.path = "**"
 
 -- Window Options
@@ -30,10 +31,5 @@ cmd('set path+=**')
 
 -- vim.highlight.priorities.syntax = 250
 vim.api.nvim_set_hl(0, 'test', {["fg"]="#ed6b25"})
-cmd("syntax match test /\\[\\[.\\{-}\\]\\]/")
 
--- [[test]]
-
--- cmd("hi obslink guifg=#ed6b25")
--- cmd("syntax match obslink /\\[\\[.\\{-}\\]\\]/")
 

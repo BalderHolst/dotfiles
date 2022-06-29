@@ -6,9 +6,12 @@ alias ls=lsd
 alias ll='lsd -l'
 
 # Navigation
-alias scr='cd ~/.scripts'
 alias ..='cd ..'
 alias ...='cd ...'
+
+cdn() {
+    mkdir -p "$1" && cd "$(pwd)/$1"
+}
 
 # Bookmarks
 source $HOME/.config/bookmarks/baliases.sh

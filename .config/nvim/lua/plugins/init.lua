@@ -6,6 +6,9 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Packer can manage itself
 
+    -- Dependencies
+    use 'nvim-lua/plenary.nvim' -- Telescope and flutter-tools dependency
+
     -- Colorschemes
     use "EdenEast/nightfox.nvim" -- Colorscheme
     use "ellisonleao/gruvbox.nvim" -- Colorscheme
@@ -14,10 +17,9 @@ return require('packer').startup(function(use)
     use 'machakann/vim-highlightedyank' -- Briefly highlight which text was yanked.
     use 'tpope/vim-commentary' -- comment out lines with gcc and gc
     use 'junegunn/goyo.vim' -- Center and hide tui
-    use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+    use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
 
     -- Telescope
-    use 'nvim-lua/plenary.nvim' -- Telescope dependency
     use 'nvim-telescope/telescope.nvim' -- main telescope
     use 'nvim-telescope/telescope-fzf-native.nvim' -- native fuzzy finder for telescope
 
@@ -29,6 +31,11 @@ return require('packer').startup(function(use)
     use "saadparwaiz1/cmp_luasnip" -- snippet completion
     use "hrsh7th/cmp-nvim-lsp" -- LSP
     use "hrsh7th/cmp-nvim-lua" -- vim type in lua config
+
+    -- More language Plugins
+    use 'dart-lang/dart-vim-plugin' -- Dart
+    use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'} -- Flutter
+    -- use 'thosakwe/vim-flutter' -- Flutter
 
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine

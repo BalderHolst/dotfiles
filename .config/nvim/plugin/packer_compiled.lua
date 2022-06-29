@@ -104,6 +104,21 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["dart-vim-plugin"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
+    url = "https://github.com/dart-lang/dart-vim-plugin"
+  },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
+    url = "https://github.com/akinsho/flutter-tools.nvim"
+  },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/friendly-snippets",

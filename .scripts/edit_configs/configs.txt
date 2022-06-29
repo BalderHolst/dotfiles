@@ -17,8 +17,5 @@ ranger-commands - /home/Balder/.config/ranger/commands.py
 zsh-aliases - /home/Balder/.config/zsh/aliases.sh
 cron - /etc/anacrontab
 muttrc - /home/Balder/.config/mutt/muttrc
-nvim-python - /home/Balder/.config/nvim/ftplugin/python.vim
-nvim-markdown - /home/Balder/.config/nvim/ftplugin/markdown.vim
-nvim-latex - /home/Balder/.config/nvim/ftplugin/tex.vim
-nvim-rust - /home/Balder/.config/nvim/ftplugin/rust.vim
 nvim-words - /home/Balder/.config/nvim/spell/da.utf-8.add
+zathura - /home/Balder/.config/zathura/zathurarc
