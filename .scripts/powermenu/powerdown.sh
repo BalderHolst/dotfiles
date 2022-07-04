@@ -9,14 +9,22 @@ function prompt(){
     fi
 }
 
-action=$(echo -e "log out\npower off\nrestart\nsleep" | dmenu) || exit 1
+action=$(echo -e "log out\nsleep\nreboot\nrestart\npower off\nshutdown" | dmenu) || exit 1
 
 case $action in 
 "power off")
     prompt $action
     poweroff
     ;;
+"shutdown")
+    prompt $action
+    poweroff
+    ;;
 "restart")
+    prompt $action
+    reboot
+    ;;
+"reboot")
     prompt $action
     reboot
     ;;
