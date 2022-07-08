@@ -193,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/vim-highlightedyank",
     url = "https://github.com/machakann/vim-highlightedyank"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 

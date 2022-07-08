@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
     use 'dart-lang/dart-vim-plugin' -- Dart
     use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'} -- Flutter
     -- use 'thosakwe/vim-flutter' -- Flutter
+    use 'vimwiki/vimwiki'
 
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine
@@ -52,7 +53,7 @@ return require('packer').startup(function(use)
     }
 
     -- My Plugins
-    use "/home/Balder/Projects/nvim_plugins/obsidian_links"
+    -- use "/home/Balder/Projects/nvim_plugins/obsidian_links"
 
 end)
 
