@@ -19,4 +19,4 @@ map('n', 'å', ':!~/.scripts/clatex/clatex.sh<cr>', opts)
 
 
 -- autocmd
-cmd('au VimEnter * :Goyo')
+-- cmd('au VimEnter * :Goyo')

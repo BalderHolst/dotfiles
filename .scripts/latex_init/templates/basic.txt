@@ -1,3 +1,3 @@
-type-report
+type-article
 essentials
 basic

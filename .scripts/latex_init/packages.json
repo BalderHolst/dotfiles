@@ -8,6 +8,14 @@
         }
     },
     {
+        "name": "type-article",
+        "setup": {
+            "cmds": [
+                "\\documentclass[10pt,a4paper]{article}"
+            ]
+        }
+    },
+    {
         "name": "essentials",
         "setup": {
             "cmds": [
@@ -101,7 +109,7 @@
         }
     },
     {
-        "name": "titlepage",
+        "name": "title",
         "setup": {
             "cmds": [
                 "\\title{Title Goes Here}",

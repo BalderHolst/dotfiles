@@ -10,7 +10,7 @@ alias ..='cd ..'
 alias ...='cd ...'
 
 cdn() {
-    mkdir -p "$1" && cd "$(pwd)/$1"
+    mkdir -p "$1" && cd "$1"
 }
 
 # Bookmarks

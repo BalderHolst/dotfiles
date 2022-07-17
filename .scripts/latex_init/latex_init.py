@@ -63,7 +63,7 @@ def populate(packages):
                 "\n"
                 ],
             "end": [
-                "\\chapter{Packages}\n",
+                "\\section*{Packages}\n",
                 "\n\n".join(packages),
                 "\n"
                 "\\end{document}\n"
@@ -140,6 +140,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 1:
         init("default", "wizard")
     elif (len(sys.argv) == 2):
+        print("creating with \'default\' structure")
         init("default", sys.argv[1])
     else:
         init(sys.argv[1], sys.argv[2])

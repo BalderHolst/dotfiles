@@ -6,6 +6,6 @@ bold-figure
 pdfpages
 tikz
 fancy-chapters
-titlepage - custom
+title - custom
 header-footer
 bibliography - dansk
