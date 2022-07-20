@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-shopt -s nullglob globstar
+# shopt -s nullglob globstar
 
 typeit=0
 if [[ $1 == "--type" ]]; then

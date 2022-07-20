@@ -19,3 +19,4 @@ cron - /etc/anacrontab
 muttrc - /home/Balder/.config/mutt/muttrc
 nvim-words - /home/Balder/.config/nvim/spell/da.utf-8.add
 zathura - /home/Balder/.config/zathura/zathurarc
+zshrc - /home/Balder/.config/zsh/zshrc

@@ -1,98 +1,72 @@
 # Pakkeliste
 
 ### Adventure
-- [ ] Euro
-- [ ] 2 dagsrygsække
-- [ ] 2 Mavebælter
-- [ ] Kasketter
-- [ ] Solbriller
-- [ ] Bøger
-- [ ] Strikketøj (evt.)
-- [ ] Kort Spil
-- [ ] 1 Dynebetræk
+- [x] Euro
+- [x] 2 Mavebælter
+- [x] Kasketter
+- [x] Solbriller
+- [x] Bøger
+- [x] Kort Spil
 - [ ] 2 Håndklæder
-- [ ] 2 oppusteligt liggeunderlag
-- [ ] 1 pandelygte
+- [x] 1 pandelygte
 
 ##### Telt
-- [ ] Telt (plykker, stænger)
-- [ ] 2 Underlag
-- [ ] 2 Sovepose/tæppe
-- [ ] 1 Lagen
-- [ ] Vaske sæbe (tøj)
-- [ ] Håndsæbe
-- [ ] Shampoo
+- [x] Telt (plykker, stænger)
+- [x] 2 Underlag
+- [x] 2 Sovepose/tæppe
+- [x] 1 Lagen
+- [x] Vaske sæbe (tøj)
+- [x] Håndsæbe
+- [x] Shampoo
 
 ##### Mad
-- [ ] Olie
-- [ ] Salt + peber
-- [ ] Havregryn
-- [ ] Havremælk
-- [ ] Kaffe
-- [ ] Te
-- [ ] Trankia + gas
-- [ ] 2 Kopper
-- [ ] 2 Plastiktallerkner?
-- [ ] 2 Skål
-- [ ] Bestik
-- [ ] lille Skarp kniv
+- [x] Olie
+- [x] Salt + peber
+- [x] Havregryn
+- [x] Havremælk
+- [x] Kaffe
+- [x] Trankia + gas
+- [x] 2 Kopper
+- [x] 2 Plastiktallerkner?
+- [x] 2 Skål
+- [x] Bestik
+- [x] lille Skarp kniv
 
 
 ### Overlevelse
-- [ ] Ikeaposer m. Lynlås (til at systematisere tingene i)
-- [ ] Gaffatape
-- [ ] Vasketøjssnor + klemmer
-- [ ] Sæbe til tøjvask
-- [ ] Lille saks
-- [ ] Vådservietter
-- [ ] Papirsservietter
+- [x] Ikeaposer m. Lynlås (til at systematisere tingene i)
 
 ### Elektronik
 - [ ] Telefoner (ikke i-pad)
-- [ ] Opladere div. + høretelefoner
+- [x] Opladere div. + høretelefoner
 - [ ] Powerbank (1 stk.)
-- [ ] Briller
-- [ ] Adaptorstik
+- [x] Adaptorstik
+- [x] Høretelefoner
 
 ### Papirer
-- [ ] Pas (+ kopi)
-- [ ] Blåt sygesikringskort (+ kopi af gult sygesikringskort)
-- [ ] Valuta
-- [ ] Betalingskort (visa + master)
-- [ ] Kørekort?
-- [ ] Travelinsurance Tryg + forsikringspapirer (+ kopi til person i DK)
-- [ ] Plastikmappe til div. papirer
-- [ ] Corona Vaccinationskort
+- [x] Pas
+- [x] Blåt sygesikringskort (+ kopi af gult sygesikringskort)
+- [x] Valuta
+- [x] Betalingskort (visa + master)
 
 ### Hvis vil overleve
-- [ ] Solcreme
-- [ ] Bind + tamponer
-- [ ] Plaster + englehud
-- [ ] Førstehjælpskasse + forbinding
-- [ ] Shampoo + sæbe
-- [ ] Aloe Vera gel (lille bøtte) evt.
-- [ ] Læbepomade
+- [x] Solcreme
+- [x] Bind + tamponer
+- [x] Plaster + englehud
 
 ### Hvis døende
-- [ ] Desinficerede creme
-- [ ] Sprit
-- [ ] Smertestillende
-- [ ] Piller mod diarré
-- [ ] Antihistamin
-- [ ] Termometer
-- [ ] Øjendråber
+- [x] Sprit
+- [x] Smertestillende
+- [x] Piller mod diarré
+- [x] Antihistamin
+- [x] Øjendråber
 
 ### Toiletsovning 
-- [ ] Ørepropper
+- [x] Ørepropper
 - [ ] Tandbørster + tandpasta
-- [ ] Dagcreme
-- [ ] Deo
-- [ ] Kam/børste
-- [ ] Barberskraber
-- [ ] Vatpinde
-- [ ] Negleklipper
-- [ ] Pincet
-- [ ] Toiletpapir
+- [x] Dagcreme
+- [x] Deo
+- [x] Toiletpapir
 
 ### Frejas tøj og sko
 - [ ] Sandaler

@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Script in $(pwd) was used!"
+
 paths=$(find ~/.scripts | grep -E '\.sh|\.py')
 
 
