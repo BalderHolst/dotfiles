@@ -27,4 +27,3 @@ SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 echo "$SCRIPT_DIR/update_scripts.sh" > $script_dir/update_scripts
 chmod +x $script_dir/update_scripts
 
-
