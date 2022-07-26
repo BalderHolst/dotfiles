@@ -18,8 +18,14 @@
 -- local lambda = require("luasnip.extras").l
 -- local postfix = require("luasnip.extras.postfix").postfix
 
+local same = function (index)
+		return f(function(arg)
+				return arg[1]
+		end, { index })
+end
+
 return {
 	parse("freja", "freja er sød!"),
-	parse("fMs", "freja er MEGET sød")
+	parse("fMs", "freja er MEGET sød"),
 }
 
