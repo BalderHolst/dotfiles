@@ -69,7 +69,7 @@ cmp.setup {
     -- ["<CR>"] = cmp.mapping.confirm { select = true },
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
-        --cmp.select_next_item()
+        -- cmp.select_next_item()
 	cmp.confirm( { select = true } )
       elseif luasnip.expandable() then
         luasnip.expand()
@@ -108,6 +108,7 @@ cmp.setup {
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
+        cmdline = "[cmdline]",
       })[entry.source.name]
       return vim_item
     end,
@@ -117,6 +118,7 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
+    { name = "cmdline" },
   },
   window = {
        completion = cmp.config.window.bordered(),
@@ -131,6 +133,7 @@ cmp.setup {
     native_menu = false,
   },
 }
+
 
 
 

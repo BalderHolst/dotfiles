@@ -159,11 +159,6 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  obsidian_links = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/obsidian_links",
-    url = "/home/Balder/Projects/nvim_plugins/obsidian_links"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/packer.nvim",
