@@ -10,6 +10,8 @@ local function setup_out()
 	vim.api.nvim_win_set_buf(out_win, out_buf) -- sets the content op the split to be the new buffer
 	-- vim.api.nvim_buf_set_name(out_buf, "output")
 	vim.api.nvim_win_set_width(out_win, 40) -- Sets the width
+	vim.api.nvim_win_set_option(out_win, "relativenumber", false)
+	vim.api.nvim_win_set_option(out_win, "wrap", false)
 	vim.api.nvim_set_current_win(code_win) -- sætter curseren på coden igen
 
 	return out_win, out_buf
@@ -18,7 +20,7 @@ end
 local out_win, out_buf = nil, nil
 
 M.run_file = function(command)
-	vim.api.nvim_buf_set_lines(out_buf, 0, -1, false, {"Python:"})
+	vim.api.nvim_buf_set_lines(out_buf, 0, -1, false, { "[" .. table.concat(command, " ") .. "]"})
 	vim.fn.jobstart(command, {
 		stout_buffered = true,
 		on_stdout = function (_, data)
@@ -45,11 +47,21 @@ M.start = function()
 
 	local filename = vim.api.nvim_buf_get_name(vim.api.nvim_get_current_buf()) -- name of current opended file
 
+	-- Python
 	vim.api.nvim_create_autocmd("BufWritePost", {
 		group = vim.api.nvim_create_augroup("runner", {clear = true}),
 		pattern = "*.py",
 		callback = function ()
 			M.run_file({"python", filename})
+		end
+	})
+
+	-- latex
+	vim.api.nvim_create_autocmd("BufWritePost", {
+		group = vim.api.nvim_create_augroup("runner", {clear = true}),
+		pattern = "*.tex",
+		callback = function ()
+			M.run_file({"clatex"})
 		end
 	})
 
@@ -64,7 +76,12 @@ end
 
 M.toggle = function()
 	if (out_win and out_buf) then
-		M.close()
+		if (vim.api.nvim_win_is_valid(out_win)) then
+			M.close()
+		else
+			if (vim.api.nvim_buf_is_valid(out_buf)) then vim.api.nvim_buf_delete(out_buf, {}) end
+			M.start()
+		end
 	else
 		M.start()
 	end

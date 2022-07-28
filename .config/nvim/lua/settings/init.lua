@@ -7,23 +7,25 @@ local cmd = vim.cmd
 
 
 -- Global options
-o.hlsearch = false
-o.syntax = true
-o.mouse = "a"
+o.laststatus = 3 -- global status line
+o.hlsearch = false -- ingen vedvarende highlight efter search
+o.syntax = true -- enable syntax highlighting
+o.mouse = "a" -- enable mouse
 o.splitbelow = true
 o.splitright = true
-o.clipboard = "unnamedplus"
-o.number = true
+o.clipboard = "unnamedplus" -- use system clipboard
+o.number = true -- enable numbering
 o.smarttab = true
 
 -- Buffer Options
 -- bo.expandtab = true
-bo.tabstop = 1
+bo.tabstop = 2
 bo.shiftwidth = 2
 bo.path = "**"
 
 -- Window Options
 wo.relativenumber = true
+wo.wrap = false
 
 -- Auto cmd
 cmd('au InsertEnter * norm zz')
