@@ -15,13 +15,15 @@ o.splitbelow = true
 o.splitright = true
 o.clipboard = "unnamedplus" -- use system clipboard
 o.number = true -- enable numbering
+
 o.smarttab = true
 
 -- Buffer Options
--- bo.expandtab = true
-bo.tabstop = 2
-bo.shiftwidth = 2
-bo.path = "**"
+bo.expandtab = true
+bo.shiftwidth = 4
+bo.tabstop = 4
+bo.softtabstop = 4
+-- bo.path = "**"
 
 -- Window Options
 wo.relativenumber = true
@@ -29,13 +31,7 @@ wo.wrap = false
 
 -- Auto cmd
 cmd('au InsertEnter * norm zz')
-cmd('set path+=**')
-
--- vim.highlight.priorities.syntax = 250
-vim.api.nvim_set_hl(0, 'test', {["fg"]="#ed6b25"})
-
-
--- Autocmds - find med :help event
+-- cmd('set path+=**')
 
 
 -- Filetypes

@@ -6,3 +6,9 @@ require("plugins.cmp")
 require("plugins.autopairs")
 require("plugins.flutter-tools").setup()
 require("plugins.luasnip")
+require("plugins.project")
+require("plugins.lualine")
+-- require("plugins.null-ls")
+
+
+

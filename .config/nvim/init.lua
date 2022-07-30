@@ -1,8 +1,5 @@
 require("settings")
 require("mappings")
-require("colors.gruvbox")
+require("colors.nordfox")
 require("plugins")
 require("myscripts")
-
-
-
