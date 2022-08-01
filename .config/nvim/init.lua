@@ -1,5 +1,5 @@
 require("settings")
 require("mappings")
-require("colors.nordfox")
+require("colors.tokyonight")
 require("plugins")
 require("myscripts")

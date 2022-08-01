@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["aura-neovim"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/aura-neovim",
-    url = "https://github.com/techtuner/aura-neovim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -134,10 +129,10 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["lualine.nvim"] = {
+  ["neuron.nvim"] = {
     loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/neuron.nvim",
+    url = "https://github.com/oberblastmeister/neuron.nvim"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -174,11 +169,6 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -193,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
+  },
+  sonokai = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
@@ -209,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/vim-commentary",
@@ -223,11 +223,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
     url = "https://github.com/bluz71/vim-moonfly-colors"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/vimwiki",
-    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 
