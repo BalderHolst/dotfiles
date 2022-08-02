@@ -50,20 +50,20 @@ M.start = function()
 	-- Python
 	vim.api.nvim_create_autocmd("BufWritePost", {
 		group = vim.api.nvim_create_augroup("runner", {clear = true}),
-		pattern = "*.py",
+		pattern = "*\\.py",
 		callback = function ()
 			M.run_file({"python", filename})
 		end
 	})
 
 	-- latex
-	vim.api.nvim_create_autocmd("BufWritePost", {
-		group = vim.api.nvim_create_augroup("runner", {clear = true}),
-		pattern = "*.tex",
-		callback = function ()
-			M.run_file({"clatex"})
-		end
-	})
+	-- vim.api.nvim_create_autocmd("BufWritePost", {
+	-- 	group = vim.api.nvim_create_augroup("runner", {clear = true}),
+	-- 	pattern = "*.tex",
+	-- 	callback = function ()
+	-- 		M.run_file({"clatex"})
+	-- 	end
+	-- })
 
 end
 
