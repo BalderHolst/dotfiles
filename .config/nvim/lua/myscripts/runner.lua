@@ -9,7 +9,7 @@ local function setup_out()
 	local out_buf = vim.api.nvim_create_buf(true, true)
 	vim.api.nvim_win_set_buf(out_win, out_buf) -- sets the content op the split to be the new buffer
 	-- vim.api.nvim_buf_set_name(out_buf, "output")
-	vim.api.nvim_win_set_width(out_win, 40) -- Sets the width
+	vim.api.nvim_win_set_width(out_win, 100) -- Sets the width
 	vim.api.nvim_win_set_option(out_win, "relativenumber", false)
 	vim.api.nvim_win_set_option(out_win, "wrap", false)
 	vim.api.nvim_set_current_win(code_win) -- sætter curseren på coden igen
