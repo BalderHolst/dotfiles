@@ -185,6 +185,8 @@ exec_always --no-startup-id polybar
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id  brightnessctl set +10% # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id  brightnessctl set 10%- # decrease screen brightness
+bindsym Shift+XF86MonBrightnessUp exec --no-startup-id  brightnessctl set 100% # increase screen brightness
+bindsym Shift+XF86MonBrightnessDown exec --no-startup-id  brightnessctl set 10% # increase screen brightness
 
 #new_window 1pixel
 
