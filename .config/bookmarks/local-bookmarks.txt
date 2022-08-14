@@ -21,3 +21,4 @@ projects - /home/Balder/Projects
 dart_database - /home/Balder/Projects/dart_packages/database
 job - /home/Balder/Documents/job
 phone - /home/Balder/phone
+sqlite-integrated - /home/Balder/Projects/python_packages/sqlite-integrated
