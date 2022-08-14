@@ -26,6 +26,9 @@ alias gp='git push'
 alias gaa='git add .'
 alias gca='git add . && git commit'
 
+# Python
+alias py='bpython'
+
 # Groff
 alias groffpdf='groff -ms -Tpdf'
 

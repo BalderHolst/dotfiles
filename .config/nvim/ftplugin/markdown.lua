@@ -9,6 +9,7 @@ local opts = { noremap = true }
 -- settings
 wo.conceallevel = 2
 wo.linebreak = true
+wo.wrap = true
 
 
 -- mappings
