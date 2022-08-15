@@ -16,7 +16,9 @@ map('n', '<c-h>', '<c-w>h', opts)
 map('n', '<c-j>', '<c-w>j', opts)
 map('n', '<c-k>', '<c-w>k', opts)
 
+-- leaders
 vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.formatting_sync() print("formatted!") end)
+vim.keymap.set('n', '<leader>t', function() vim.fn.jobstart("kitty --detach") end) -- open terminal
 
 
 local telescope = require("telescope")
@@ -33,6 +35,7 @@ vim.keymap.set('n', 'fv', function() telescope_builtin.find_files({ cwd = "~/.co
 vim.keymap.set('n', 'fs', function() telescope_builtin.lsp_document_symbols() end) -- edit config
 vim.keymap.set('n', 'fb', function() telescope_extensions.file_browser.file_browser() end) -- open file browser
 vim.keymap.set('n', 'fp', function() telescope_extensions.projects.projects(telescope_themes.get_dropdown()) end) -- open list of projects in dropdown mode
+
 
 -- Other Plugins
 -- map('n', '<leader>f', ':Goyo | set linebreak <cr> | :e<cr>', opts)
