@@ -19,6 +19,9 @@ source $HOME/.config/bookmarks/baliases.sh
 alias r=ranger
 alias mail=neomutt
 
+# nvim
+alias n='nvim .'
+
 # git
 alias gs='git status'
 alias gc='git commit'
