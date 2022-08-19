@@ -129,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["neuron.nvim"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/neuron.nvim",
-    url = "https://github.com/oberblastmeister/neuron.nvim"
-  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nightfox.nvim",

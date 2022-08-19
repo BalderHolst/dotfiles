@@ -1,9 +1,11 @@
 local telescope = require("telescope")
 local fb_actions = require("telescope").extensions.file_browser.actions
 
+local fb_confirm = function() vim.cmd('exe "normal \\<cr>"') end
+
 local options = {
 	defaults = {
-		prompt_prefix = "  ",
+		-- prompt_prefix = "  ",
 		selection_caret = "  ",
 		entry_prefix = "  ",
 		initial_mode = "insert",
@@ -45,13 +47,13 @@ local options = {
 					["<C-r>"] = fb_actions.rename,
 					["<C-d>"] = fb_actions.remove,
 					["<M-h>"] = fb_actions.goto_parent_dir,
-					["<M-l>"] = fb_actions.open,
+					["<M-l>"] = fb_confirm,
 					["<C-j>"] = function() fb_actions.move(1) end,
 					-- ["<C-m>"] = fb_actions.move,
 				},
 				["n"] = {
 					["d"] = fb_actions.remove,
-					["l"] = fb_actions.open,
+					["l"] = fb_confirm,
 					["h"] = fb_actions.goto_parent_dir,
 				},
 			},
