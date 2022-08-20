@@ -9,9 +9,10 @@ alias ll='lsd -l'
 alias ..='cd ..'
 alias ...='cd ...'
 
-cdn() {
-    mkdir -p "$1" && cd "$1"
-}
+# search history
+h() { $(history  | fzf | cut -d ' ' -f5-) }
+
+cdn() { mkdir -p "$1" && cd "$1" }
 
 # Bookmarks
 source $HOME/.config/bookmarks/baliases.sh
