@@ -9,8 +9,8 @@ vim.g.mapleader = ' '
 -- Spelling
 map('n', '<leader>d', ':set spell! spelllang=da<CR>', opts)
 map('n', '<leader>e', ':set spell! spelllang=En<CR>', opts)
--- Splits
 
+-- Splits
 map('n', '<c-l>', '<c-w>l', opts)
 map('n', '<c-h>', '<c-w>h', opts)
 map('n', '<c-j>', '<c-w>j', opts)
@@ -39,3 +39,4 @@ vim.keymap.set('n', 'fp', function() telescope_extensions.projects.projects(tele
 
 -- Other Plugins
 -- map('n', '<leader>f', ':Goyo | set linebreak <cr> | :e<cr>', opts)
+

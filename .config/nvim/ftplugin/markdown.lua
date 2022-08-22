@@ -21,3 +21,6 @@ map('n', 'k', 'gk', opts)
 
 -- autocmd
 -- cmd('au VimEnter * :Goyo')
+
+-- plugins
+vim.keymap.set('n', 'å', function() require("mdeval").eval_code_block() end)

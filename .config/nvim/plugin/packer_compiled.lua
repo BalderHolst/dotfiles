@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["mdeval.nvim"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/mdeval.nvim",
+    url = "https://github.com/jubnzv/mdeval.nvim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nightfox.nvim",

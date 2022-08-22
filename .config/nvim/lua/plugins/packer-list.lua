@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
 	-- More language Plugins
 	use 'dart-lang/dart-vim-plugin' -- Dart
 	use { 'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim' } -- Flutter
+	use 'https://github.com/jubnzv/mdeval.nvim' -- markdown code blocks
 	-- use 'thosakwe/vim-flutter' -- Flutter
 
 	-- snippets

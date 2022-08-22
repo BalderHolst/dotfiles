@@ -10,6 +10,7 @@ require("plugins.project")
 -- require("plugins.neuron")
 -- require("plugins.lualine")
 -- require("plugins.null-ls")
+require("plugins.mdeval")
 
 
 

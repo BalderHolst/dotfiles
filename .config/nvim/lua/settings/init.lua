@@ -18,6 +18,7 @@ o.number = true -- enable numbering
 
 o.smarttab = true
 
+
 -- Buffer Options
 bo.expandtab = true
 bo.shiftwidth = 4
@@ -39,3 +40,5 @@ vim.api.nvim_create_autocmd("BufWinEnter", { pattern = "*.dart" , command = "set
 
 
 
+-- variables
+vim.g.markdown_fenced_languages = {'python', 'cpp'} -- enable highlighting for these languages in markdown files.
