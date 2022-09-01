@@ -22,4 +22,4 @@ dart_database - /home/Balder/Projects/dart_packages/database
 job - /home/Balder/Documents/job
 phone - /home/Balder/phone
 sqlite-integrated - /home/Balder/Projects/python_packages/sqlite-integrated
-uni - /home/Balder/Documents/uni/bachelor/Semester\ 1
+uni - /home/Balder/Documents/uni

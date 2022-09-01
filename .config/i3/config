@@ -214,6 +214,7 @@ bindsym $mod+w exec --no-startup-id connect
 bindsym $mod+Shift+b exec --no-startup-id reload_bar
 bindsym $mod+e exec --no-startup-id open_dir
 bindsym $mod+Shift+e exec --no-startup-id powerdown
+bindsym $mod+Shift+p exec --no-startup-id passmenu
 bindsym XF86PowerOff exec --no-startup-id powerdown
 bindsym $mod+b exec --no-startup-id firefox
 bindsym $mod+Shift+f exec --no-startup-id firefox https://www.y8.com/games/fish_eat_fish_3_players
