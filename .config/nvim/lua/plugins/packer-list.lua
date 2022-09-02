@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
 	use 'junegunn/goyo.vim' -- Center and hide tui
 	use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
 	use "ahmedkhalf/project.nvim" -- roots nvim in git repos and keeps list of projects (integrates with telescope)
+	use 'https://github.com/norcalli/nvim-colorizer.lua' -- preview colors
 	-- use 'oberblastmeister/neuron.nvim'
 	-- use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } } -- lua status line
 
