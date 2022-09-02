@@ -23,6 +23,9 @@ alias mail=neomutt
 # nvim
 alias n='nvim .'
 
+# Dublicate
+alias d='kitty --detach'
+
 # git
 alias gs='git status'
 alias gc='git commit'
