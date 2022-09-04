@@ -30,11 +30,11 @@ local telescope_themes = require("telescope.themes")
 vim.keymap.set('n', '<leader>ps', function() require("packer").sync() end)
 
 -- Telescope
-vim.keymap.set('n', 'ff', function() telescope_builtin.find_files() end) -- go to file
-vim.keymap.set('n', 'fv', function() telescope_builtin.find_files({ cwd = "~/.config/nvim/" }) end) -- edit config
-vim.keymap.set('n', 'fs', function() telescope_builtin.lsp_document_symbols() end) -- edit config
-vim.keymap.set('n', 'fb', function() telescope_extensions.file_browser.file_browser() end) -- open file browser
-vim.keymap.set('n', 'fp', function() telescope_extensions.projects.projects(telescope_themes.get_dropdown()) end) -- open list of projects in dropdown mode
+vim.keymap.set('n', '<leader>ff', function() telescope_builtin.find_files() end) -- go to file
+vim.keymap.set('n', '<leader>fv', function() telescope_builtin.find_files({ cwd = "~/.config/nvim/" }) end) -- edit config
+vim.keymap.set('n', '<leader>fs', function() telescope_builtin.lsp_document_symbols() end) -- edit config
+vim.keymap.set('n', '<leader>fb', function() telescope_extensions.file_browser.file_browser() end) -- open file browser
+vim.keymap.set('n', '<leader>fp', function() telescope_extensions.projects.projects(telescope_themes.get_dropdown()) end) -- open list of projects in dropdown mode
 
 
 -- Other Plugins
