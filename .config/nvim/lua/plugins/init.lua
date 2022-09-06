@@ -12,6 +12,7 @@ require("plugins.project")
 -- require("plugins.null-ls")
 require("plugins.mdeval")
 require("plugins.colorizer")
+require("plugins.zen-mode")
 
 
 

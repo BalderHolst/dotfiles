@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
 	use "bluz71/vim-moonfly-colors" -- moonfly colorscheme
 	use "sainnhe/sonokai"
 	use "folke/tokyonight.nvim"
+	use { 'Everblush/everblush.nvim', as = 'everblush' }
 
 	-- Misc
 	use 'machakann/vim-highlightedyank' -- Briefly highlight which text was yanked.
@@ -23,6 +24,7 @@ return require('packer').startup(function(use)
 	use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
 	use "ahmedkhalf/project.nvim" -- roots nvim in git repos and keeps list of projects (integrates with telescope)
 	use 'https://github.com/norcalli/nvim-colorizer.lua' -- preview colors
+	use 'folke/zen-mode.nvim'
 	-- use 'oberblastmeister/neuron.nvim'
 	-- use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } } -- lua status line
 
