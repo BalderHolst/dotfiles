@@ -26,6 +26,9 @@ alias n='nvim .'
 # Dublicate
 alias d='kitty --detach'
 
+# To pdf
+alias topdf='libreoffice --convert-to pdf'
+
 # git
 alias gs='git status'
 alias gc='git commit'
@@ -40,6 +43,9 @@ alias py='bpython'
 alias groffpdf='groff -ms -Tpdf'
 
 export CONFIGS_FILE="$HOME/.scripts/edit_configs/configs.txt"
+
+# HDMI
+alias hdmi-dublicate='xrandr --output eDP --same-as HDMI-A-0'
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
@@ -66,10 +72,4 @@ ex ()
   else
     echo "'$1' is not a valid file"
   fi
-}
-
-topdf () {
-    name="$(echo "$1" | cut -d. -f1).pdf"
-    pandoc -o "$name" "$1"
-    swallow zathura "$(echo "$name" | sed 's/ /\\ /g')"
 }

@@ -6,6 +6,7 @@ local cmd = vim.cmd
 
 
 
+
 -- Global options
 o.laststatus = 3 -- global status line
 o.hlsearch = false -- ingen vedvarende highlight efter search
@@ -17,6 +18,7 @@ o.clipboard = "unnamedplus" -- use system clipboard
 o.number = true -- enable numbering
 
 o.smarttab = true
+
 
 
 -- Buffer Options
@@ -42,3 +44,4 @@ vim.api.nvim_create_autocmd("BufWinEnter", { pattern = "*.dart" , command = "set
 
 -- variables
 vim.g.markdown_fenced_languages = {'python', 'cpp'} -- enable highlighting for these languages in markdown files.
+vim.g.noswapfile = true -- disable swapfiles

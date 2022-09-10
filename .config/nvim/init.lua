@@ -1,6 +1,6 @@
 require("settings")
 require("mappings")
-require("colors.everblush")
+require("colors.tokyonight")
 require("plugins")
 require("myscripts")
 
