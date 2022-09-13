@@ -21,3 +21,4 @@ nvim-words - /home/Balder/.config/nvim/spell/da.utf-8.add
 zathura - /home/Balder/.config/zathura/zathurarc
 zshrc - /home/Balder/.config/zsh/zshrc
 spectrwm - /home/Balder/.config/spectrwm/spectrwm.conf
+startpage - /home/Balder/.config/startpage/src/startpage.html
