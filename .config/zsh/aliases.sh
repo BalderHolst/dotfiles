@@ -21,7 +21,7 @@ alias r=ranger
 alias mail=neomutt
 
 # nvim
-alias n='nvim .'
+alias n='nvim'
 
 # Dublicate
 alias d='kitty --detach'

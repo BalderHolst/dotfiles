@@ -39,5 +39,8 @@ vim.keymap.set('n', 'fp', function() telescope_extensions.projects.projects(tele
 
 -- Other Plugins
 -- map('n', '<leader>f', ':Goyo | set linebreak <cr> | :e<cr>', opts)
-vim.keymap.set('n', '<leader>z', function() require("zen-mode").toggle() end)
+vim.keymap.set('n', '<leader>z', function()
+	vim.wo.wrap = not vim.wo.wrap
+	require("zen-mode").toggle()
+end)
 

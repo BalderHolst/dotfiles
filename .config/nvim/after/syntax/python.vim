@@ -1,3 +1,5 @@
+" Syntax highlighting for f-strings in python.
+
 " in ~/.config/nvim/after/syntax or ~/.vim/after/syntax
 syn match pythonEscape +{{+ contained containedin=pythonfString,pythonfDocstring
 syn match pythonEscape +}}+ contained containedin=pythonfString,pythonfDocstring
