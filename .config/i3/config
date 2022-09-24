@@ -224,3 +224,4 @@ bindsym $mod+Shift+f exec --no-startup-id firefox https://www.y8.com/games/fish_
 bindsym $mod+Ctrl+Shift+p exec --no-startup-id pavucontrol
 bindsym $mod+Ctrl+Shift+w exec --no-startup-id wally
 bindsym $mod+Ctrl+Shift+k exec --no-startup-id xset r rate 220 50 && notify-send "Moonlander" "Set Keyrepeat"
+bindsym $mod+Ctrl+Shift+m exec --no-startup-id firefox "https://configure.zsa.io/moonlander/layouts/KR0rp/latest/0"
