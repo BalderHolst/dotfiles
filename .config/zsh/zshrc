@@ -1,3 +1,10 @@
+tasks
+
+source $HOME/.config/zsh/aliases.sh
+
+
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -149,4 +156,4 @@ path+=~/.config/script_links
 # echo -ne '\e[5 q' # Use beam shape cursor on startup.
 # preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-source $HOME/.config/zsh/aliases.sh
+
