@@ -45,7 +45,7 @@ alias groffpdf='groff -ms -Tpdf'
 export CONFIGS_FILE="$HOME/.scripts/edit_configs/configs.txt"
 
 # HDMI
-alias hdmi-dublicate='xrandr --output eDP --same-as HDMI-A-0'
+alias hdmi-dublicate='xrandr --output HDMI-A-0 --auto --same-as eDP'
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
