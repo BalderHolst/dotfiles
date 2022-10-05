@@ -10,7 +10,6 @@ apps - /home/Balder/apps
 root - /
 etc - /etc
 kollegier - /home/Balder/Documents/hjemmesider/Kollegier
-noter - /home/Balder/Documents/Skole/Balders\ Noter
 bmark - /home/Balder/.scripts/bookmarks
 srp - /home/Balder/Documents/Skole/Gym/3.\ G/SRP
 oindex - /home/Balder/Projects/obsidian-index
@@ -24,3 +23,9 @@ phone - /home/Balder/phone
 sqlite-integrated - /home/Balder/Projects/python_packages/sqlite-integrated
 uni - /home/Balder/Documents/uni
 motetter - /home/Balder/Documents/job/Munkebjerg Kirke/motetter
+noter - /home/Balder/Documents/uni/noter
+elektronik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Grundlæggende\ Elektronik
+mmp - /home/Balder/Documents/uni/bachelor/Semester\ 1/MMP
+matematik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotteknologisk\ Matematik
+fysik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotters\ Fysik (E22)
+semesterprojekt - /home/Balder/Documents/uni/bachelor/Semester\ 1/Semesterprojekt
