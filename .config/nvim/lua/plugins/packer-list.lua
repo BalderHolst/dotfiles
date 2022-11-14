@@ -58,12 +58,9 @@ return require('packer').startup(function(use)
 	use "jose-elias-alvarez/null-ls.nvim" -- formatter and linter
 
 	-- Treesitter
-	use {
-		'nvim-treesitter/nvim-treesitter',
-		-- run = ':TSUpdate'
-	}
-
-	-- My Plugins
-	-- use "/home/Balder/Projects/nvim_plugins/obsidian_links"
+	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	use 'nvim-treesitter/playground'
+	use 'David-Kunz/markid'
+    use 'nvim-treesitter/nvim-treesitter-context'
 
 end)

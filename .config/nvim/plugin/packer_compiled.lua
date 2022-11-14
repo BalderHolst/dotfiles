@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  markid = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/markid",
+    url = "https://github.com/David-Kunz/markid"
+  },
   ["mdeval.nvim"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/mdeval.nvim",
@@ -184,10 +189,20 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,

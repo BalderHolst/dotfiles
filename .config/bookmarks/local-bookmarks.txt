@@ -30,3 +30,4 @@ matematik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotteknologisk\ Ma
 fysik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotters\ Fysik\ (E22)
 semesterprojekt - /home/Balder/Documents/uni/bachelor/Semester\ 1/Semesterprojekt
 formula-search - /home/Balder/Projects/python_packages/formula-search
+Stardew - /home/Balder/.local/share/Steam/steamapps/common/Stardew\ Valley
