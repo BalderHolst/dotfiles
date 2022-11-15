@@ -111,7 +111,7 @@ formatting = {
 			luasnip = "[Snippet]",
 			buffer = "[Buffer]",
 			path = "[Path]",
-			cmdline = "[cmdline]",
+			-- cmdline = "[cmdline]",
 		})[entry.source.name]
 		return vim_item
 	end,
