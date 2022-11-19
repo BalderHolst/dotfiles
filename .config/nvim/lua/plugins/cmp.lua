@@ -121,7 +121,7 @@ sources = {
 	{ name = "luasnip" },
 	{ name = "buffer" },
 	{ name = "path" },
-	{ name = "cmdline" },
+	-- { name = "cmdline" },
 },
 window = {
 	completion = cmp.config.window.bordered(),
