@@ -6,6 +6,8 @@ local cmd = vim.cmd
 
 
 
+-- nvim options
+vim.opt.undofile = true
 
 -- Global options
 o.laststatus = 3 -- global status line
