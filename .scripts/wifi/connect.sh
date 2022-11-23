@@ -2,7 +2,7 @@
 
 notify-send Wifi "Searching for connections..."
 
-devs=$(nmcli d wifi list | sed 's/  \+/:/g' | sed 's/ Mbit/:Mbit/g')
+devs=$(nmcli d wifi list --rescan yes | sed 's/  \+/:/g' | sed 's/ Mbit/:Mbit/g')
 #devs=$(cat $HOME/.scripts/wifi/sample_wifis.txt | sed 's/  \+/:/g' | sed 's/ Mbit/:Mbit/g')
 
 choice=$(echo "$devs" | awk -F ':' '{print $8 " (" $11 "mb/s)"}' | grep -v "^--\|BARS" | dmenu -i -c -l 30) || exit 1
