@@ -8,7 +8,6 @@ require("plugins.telescope")
 require("plugins.lsp")
 require("plugins.cmp")
 require("plugins.autopairs")
-require("plugins.flutter-tools").setup()
 require("plugins.luasnip")
 require("plugins.project")
 -- require("plugins.neuron")
@@ -18,4 +17,6 @@ require("plugins.mdeval")
 require("plugins.colorizer")
 require("plugins.zen-mode")
 
-
+-- Languages
+require("plugins.flutter-tools").setup()
+-- require("plugins.arduino")

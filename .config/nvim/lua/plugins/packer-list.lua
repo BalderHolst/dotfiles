@@ -47,6 +47,8 @@ return require('packer').startup(function(use)
 	use { 'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim' } -- Flutter
 	use 'https://github.com/jubnzv/mdeval.nvim' -- markdown code blocks
 	-- use 'thosakwe/vim-flutter' -- Flutter
+	-- use { "vlelo/arduino-helper.nvim" } -- Arduino (requires arduino-cli)
+	use "https://github.com/stevearc/vim-arduino"
 
 	-- snippets
 	use "L3MON4D3/LuaSnip" --snippet engine
