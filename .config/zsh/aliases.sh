@@ -37,7 +37,7 @@ alias gaa='git add .'
 alias gca='git add . && git commit'
 
 # Arduino
-alias ard='arduino-cli'
+alias ino='arduino-cli'
 
 # Python
 alias py='bpython'

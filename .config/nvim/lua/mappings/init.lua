@@ -17,10 +17,14 @@ map('n', '<c-h>', '<c-w>h', opts)
 map('n', '<c-j>', '<c-w>j', opts)
 map('n', '<c-k>', '<c-w>k', opts)
 
+-- Terminal
+map('n', '<leader>t', ':vsp term://zsh<CR>', opts)
+map('t', '<Esc>', '<C-\\><C-n>', opts)
+
 
 -- leaders
 vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.formatting_sync() print("formatted!") end)
-vim.keymap.set('n', '<leader>t', function() vim.fn.jobstart("kitty --detach") end) -- open terminal
+-- vim.keymap.set('n', '<leader>t', function() vim.fn.jobstart("kitty --detach") end) -- open terminal
 
 -- Packer
 vim.keymap.set('n', '<leader>ps', function() require("packer").sync() end)
