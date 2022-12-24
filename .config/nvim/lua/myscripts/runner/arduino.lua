@@ -1,69 +1,23 @@
 local M = {}
 
-local function setup_out()
-	local code_win = vim.api.nvim_get_current_win()
-	vim.cmd("vsplit") -- spilt vertically
-
-	local out_win = vim.api.nvim_get_current_win()
-	local out_buf = vim.api.nvim_create_buf(true, true)
-	vim.api.nvim_win_set_buf(out_win, out_buf) -- sets the content op the split to be the new buffer
-	-- vim.api.nvim_buf_set_name(out_buf, "output")
-	vim.api.nvim_win_set_width(out_win, 70) -- Sets the width
-	vim.api.nvim_win_set_option(out_win, "relativenumber", false)
-	vim.api.nvim_win_set_option(out_win, "wrap", false)
-	vim.api.nvim_set_current_win(code_win) -- sætter curseren på coden igen
-
-	return out_win, out_buf
+local function file_exists(file)
+  local f = io.open(file, "rb")
+  if f then f:close() end
+  return f ~= nil
 end
 
-M.close = function ()
-	vim.api.nvim_buf_delete(out_buf, {}) -- deletes buffer (and its window)
-	out_win, out_buf = nil, nil -- unsets saved buffer and window id
+M.get_arduino_port = function ()
+    local file = '/home/Balder/Projects/arduino/blink/sketch.json'
 
-	vim.api.nvim_del_augroup_by_name("runner") -- deletes the auto commands
+    if not file_exists(file) then print("Could not find sketch.json file") return {} end
+
+    for line in io.lines(file) do
+        if string.find(line, "\"port\":") then
+            return(string.gsub(line, " *\"port\": ?\"serial://(.+)\"", "%1"))
+        end
+    end
+
+    return nil
 end
 
-M.toggle = function()
-	if (out_win and out_buf) then
-		if (vim.api.nvim_win_is_valid(out_win)) then
-			M.close()
-		else
-			if (vim.api.nvim_buf_is_valid(out_buf)) then vim.api.nvim_buf_delete(out_buf, {}) end
-			M.start()
-		end
-	else
-		M.start()
-	end
-end
-
-M.start = function()
-	if (not out_buf or not out_win) then
-		out_win, out_buf = setup_out()
-	elseif (not vim.api.nvim_buf_is_valid(out_buf) or not vim.api.nvim_win_is_valid(out_win)) then
-		out_win, out_buf = setup_out()
-	end
-end
-
-
-M.compile = function()
-    M.start()
-    local board = "arduino:avr:uno"
-	vim.fn.jobstart({"cat", "/dev/ttyUSB0"}, {
-		stout_buffered = false,
-		on_stdout = function (_, data)
-			if data then
-				vim.api.nvim_buf_set_lines(out_buf, -1, -1, false, data)
-			end
-		end,
-		on_stderr = function (_, data)
-			if data then
-				vim.api.nvim_buf_set_lines(out_buf, -1, -1, false, data)
-			end
-		end
-	})
-end
-
-
-M.main_action = M.compile
-
-return(M)
+return M
