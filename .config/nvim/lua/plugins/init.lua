@@ -16,6 +16,7 @@ require("plugins.project")
 require("plugins.mdeval")
 require("plugins.colorizer")
 require("plugins.zen-mode")
+require("plugins.gitsigns")
 
 -- Languages
 require("plugins.flutter-tools").setup()

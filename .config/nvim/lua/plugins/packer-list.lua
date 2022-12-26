@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 	use "ahmedkhalf/project.nvim" -- roots nvim in git repos and keeps list of projects (integrates with telescope)
 	use 'https://github.com/norcalli/nvim-colorizer.lua' -- preview colors
 	use 'folke/zen-mode.nvim'
+    use 'lewis6991/gitsigns.nvim' -- Git symbols
 	-- use 'oberblastmeister/neuron.nvim'
 	-- use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } } -- lua status line
 
