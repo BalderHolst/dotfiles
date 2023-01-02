@@ -27,7 +27,7 @@ noter - /home/Balder/Documents/uni/noter
 elektronik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Grundlæggende\ Elektronik
 mmp - /home/Balder/Documents/uni/bachelor/Semester\ 1/MMP
 matematik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotteknologisk\ Matematik
-fysik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotters\ Fysik\ (E22)
+fysik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotters\ Fysik
 semesterprojekt - /home/Balder/Documents/uni/bachelor/Semester\ 1/Semesterprojekt
 formula-search - /home/Balder/Projects/python_packages/formula-search
 Stardew - /home/Balder/.local/share/Steam/steamapps/common/Stardew\ Valley
