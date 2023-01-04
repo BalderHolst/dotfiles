@@ -32,3 +32,4 @@ alias _"fysik"="cd /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotters\ Fy
 alias _"semesterprojekt"="cd /home/Balder/Documents/uni/bachelor/Semester\ 1/Semesterprojekt"
 alias _"formula-search"="cd /home/Balder/Projects/python_packages/formula-search"
 alias _"Stardew"="cd /home/Balder/.local/share/Steam/steamapps/common/Stardew\ Valley"
+alias _"blatex"="cd /home/Balder/Projects/python_packages/blatex"

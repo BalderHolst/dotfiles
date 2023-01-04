@@ -1,4 +1,4 @@
-# type: n
+#!/bin/python
 
 import json
 

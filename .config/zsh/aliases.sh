@@ -9,6 +9,9 @@ alias ll='lsd -l'
 alias ..='cd ..'
 alias ...='cd ...'
 
+# Purge folder
+alias purge='rm -Rf * && rm -Rf .* 2> /dev/null'
+
 # search history
 h() { $(history  | fzf | cut -d ' ' -f5-) }
 
@@ -24,7 +27,7 @@ alias mail=neomutt
 alias n='nvim'
 
 # Dublicate
-alias d='kitty --detach'
+alias t='kitty --detach'
 
 # To pdf
 alias topdf='libreoffice --convert-to pdf'

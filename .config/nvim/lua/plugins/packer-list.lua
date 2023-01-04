@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-commentary' -- comment out lines with gcc and gc
 	use 'junegunn/goyo.vim' -- Center and hide tui
 	use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
-	use "ahmedkhalf/project.nvim" -- roots nvim in git repos and keeps list of projects (integrates with telescope)
+	-- use "ahmedkhalf/project.nvim" -- roots nvim in git repos and keeps list of projects (integrates with telescope)
 	use 'https://github.com/norcalli/nvim-colorizer.lua' -- preview colors
 	use 'folke/zen-mode.nvim'
     use 'lewis6991/gitsigns.nvim' -- Git symbols

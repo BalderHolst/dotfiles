@@ -31,3 +31,4 @@ fysik - /home/Balder/Documents/uni/bachelor/Semester\ 1/Robotters\ Fysik
 semesterprojekt - /home/Balder/Documents/uni/bachelor/Semester\ 1/Semesterprojekt
 formula-search - /home/Balder/Projects/python_packages/formula-search
 Stardew - /home/Balder/.local/share/Steam/steamapps/common/Stardew\ Valley
+blatex - /home/Balder/Projects/python_packages/blatex
