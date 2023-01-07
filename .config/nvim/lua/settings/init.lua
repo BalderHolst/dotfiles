@@ -11,7 +11,7 @@ vim.opt.undofile = true
 
 -- Global options
 o.laststatus = 3 -- global status line
-o.hlsearch = false -- ingen vedvarende highlight efter search
+o.hlsearch = true
 o.syntax = true -- enable syntax highlighting
 o.mouse = "a" -- enable mouse
 o.splitbelow = true

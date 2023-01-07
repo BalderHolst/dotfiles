@@ -6,6 +6,8 @@ vim.g.mapleader = ' '
 -- tools = require("mappings.tools")
 
 
+-- other
+map('n', "<C-l>", ':noh<cr>', opts)
 
 -- Spelling
 map('n', '<leader>d', ':set spell! spelllang=da<CR>', opts)
@@ -25,6 +27,7 @@ map('t', '<Esc>', '<C-\\><C-n>', opts)
 
 -- leaders
 vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.formatting_sync() print("formatted!") end)
+map('n', '<leader>q', ':cclose<cr>', opts)
 
 -- Packer
 vim.keymap.set('n', '<leader>ps', function() require("packer").sync() end)
