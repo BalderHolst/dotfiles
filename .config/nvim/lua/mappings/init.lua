@@ -7,7 +7,7 @@ vim.g.mapleader = ' '
 
 
 -- other
-map('n', "<C-l>", ':noh<cr>', opts)
+map('n', "<C-n>", ':noh<cr>', opts)
 
 -- Spelling
 map('n', '<leader>d', ':set spell! spelllang=da<CR>', opts)
