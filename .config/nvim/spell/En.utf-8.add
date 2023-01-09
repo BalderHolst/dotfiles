@@ -6,3 +6,10 @@ sql
 sqlite
 pypi
 DatabaseEntry
+json
+blatex
+tex
+latexmk
+texlive
+linux
+cli
