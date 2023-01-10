@@ -52,3 +52,8 @@ require("zen-mode").setup {
 	on_close = function()
 	end,
 }
+
+vim.keymap.set('n', '<leader>zz', function()
+    vim.wo.wrap = true
+    require("zen-mode").toggle()
+end)

@@ -1,4 +1,4 @@
-require("plugins.packer-list") -- main packer file
+require("plugins.packer") -- main packer file
 
 require("plugins.treesitter")
 -- require("plugins.markid")
@@ -6,7 +6,7 @@ require("plugins.treesitter-context")
 
 require("plugins.telescope")
 require("plugins.lsp")
-require("plugins.cmp")
+-- require("plugins.cmp")
 require("plugins.autopairs")
 require("plugins.luasnip")
 -- require("plugins.project")

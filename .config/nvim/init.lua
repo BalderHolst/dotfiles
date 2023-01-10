@@ -1,5 +1,5 @@
 require("settings")
 require("mappings")
-require("colors.tokyonight")
+require("colors.rosepine")
 require("plugins")
 require("myscripts")

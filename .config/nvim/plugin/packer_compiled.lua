@@ -129,20 +129,35 @@ _G.packer_plugins = {
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["goyo.vim"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/goyo.vim",
-    url = "https://github.com/junegunn/goyo.vim"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["lsp-zero.nvim"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
   markid = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/markid",
     url = "https://github.com/David-Kunz/markid"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   ["mdeval.nvim"] = {
     loaded = true,
@@ -153,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
-  },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -173,11 +183,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -208,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   sonokai = {
     loaded = true,
@@ -243,11 +253,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Balder/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
-  },
-  ["vim-highlightedyank"] = {
-    loaded = true,
-    path = "/home/Balder/.local/share/nvim/site/pack/packer/start/vim-highlightedyank",
-    url = "https://github.com/machakann/vim-highlightedyank"
   },
   ["vim-moonfly-colors"] = {
     loaded = true,
