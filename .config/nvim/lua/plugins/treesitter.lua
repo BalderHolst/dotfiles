@@ -15,6 +15,15 @@ require "nvim-treesitter.configs".setup {
         additional_vim_regex_highlighting = false,
     },
 
+    incremental_selection = {
+        enable = true,
+        keymaps = {
+            init_selection = "<CR>",
+            node_selection = "<CR>",
+            scope_selection = "<S-CR>"
+        },
+    },
+
     playground = {
         enable = true,
         disable = {},
