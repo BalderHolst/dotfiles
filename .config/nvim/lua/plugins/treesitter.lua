@@ -19,8 +19,9 @@ require "nvim-treesitter.configs".setup {
         enable = true,
         keymaps = {
             init_selection = "<CR>",
-            node_selection = "<CR>",
-            scope_selection = "<S-CR>"
+            node_incremental = "<CR>",
+            scope_incremental = "<S-CR>",
+            node_decremental = "<BS>",
         },
     },
 
